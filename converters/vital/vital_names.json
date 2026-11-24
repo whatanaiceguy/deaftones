@@ -1,0 +1,1740 @@
+{
+ "words": "names.WORDS (BASE_WORDS of vitals_to_jsonl_to_idc_v3)",
+ "mixer": "names.mix (splitmix64)",
+ "groups": {
+  "lfo": {
+   "01": {
+    "k": 2,
+    "seed": 0,
+    "plain": "41906c810647d66e",
+    "contents": 1
+   },
+   "03": {
+    "k": 2,
+    "seed": 0,
+    "plain": "444cb3a0098cc76d",
+    "contents": 1
+   },
+   "3sines": {
+    "k": 2,
+    "seed": 0,
+    "plain": "f89f63b9735f6e1e",
+    "contents": 1
+   },
+   "4_Step_LFO": {
+    "k": 2,
+    "seed": 0,
+    "plain": "59ffe43abc23383d",
+    "contents": 1
+   },
+   "6": {
+    "k": 2,
+    "seed": 0,
+    "plain": "4383d516ff4fa9bc",
+    "contents": 1
+   },
+   "7": {
+    "k": 2,
+    "seed": 0,
+    "plain": "3867afb610600af4",
+    "contents": 2
+   },
+   "7_Steps": {
+    "k": 2,
+    "seed": 0,
+    "plain": "23708621b7e8eb7a",
+    "contents": 1
+   },
+   "ADSR": {
+    "k": 2,
+    "seed": 0,
+    "plain": "2c471fe5f2ec8ffd",
+    "contents": 2
+   },
+   "Actuator02": {
+    "k": 2,
+    "seed": 0,
+    "plain": "be4032ef2b72bd2c",
+    "contents": 1
+   },
+   "Afterpulse": {
+    "k": 2,
+    "seed": 0,
+    "plain": "7dae77b763ff6aeb",
+    "contents": 1
+   },
+   "Amen": {
+    "k": 2,
+    "seed": 0,
+    "plain": "64af0a7273d02037",
+    "contents": 1
+   },
+   "Arp_2": {
+    "k": 2,
+    "seed": 0,
+    "plain": "3f0362141a8fb6d6",
+    "contents": 2
+   },
+   "Arp_Steps": {
+    "k": 2,
+    "seed": 0,
+    "plain": "c8edadf971d1ae36",
+    "contents": 1
+   },
+   "Asymetric_Sine": {
+    "k": 2,
+    "seed": 0,
+    "plain": "08a0b1821ba4ce3a",
+    "contents": 2
+   },
+   "BLFO1": {
+    "k": 2,
+    "seed": 0,
+    "plain": "20a3d6d305628120",
+    "contents": 2
+   },
+   "BLFO2": {
+    "k": 2,
+    "seed": 0,
+    "plain": "069b33758806c4aa",
+    "contents": 2
+   },
+   "BLFO3": {
+    "k": 2,
+    "seed": 0,
+    "plain": "06a0b826bfb61858",
+    "contents": 2
+   },
+   "Bent_Sine": {
+    "k": 2,
+    "seed": 0,
+    "plain": "c0490166e6581fd1",
+    "contents": 1
+   },
+   "Bi_Polar_Pitch": {
+    "k": 2,
+    "seed": 0,
+    "plain": "cbb7871eda77844c",
+    "contents": 8
+   },
+   "Bi_polar_Tri": {
+    "k": 2,
+    "seed": 0,
+    "plain": "3e8e1940d4e610ef",
+    "contents": 1
+   },
+   "Blade": {
+    "k": 2,
+    "seed": 0,
+    "plain": "a08d2d389ff624f5",
+    "contents": 2
+   },
+   "DUMPSTER_BABY": {
+    "k": 2,
+    "seed": 0,
+    "plain": "2da48750ac0322f9",
+    "contents": 2
+   },
+   "Darting_Ramp": {
+    "k": 2,
+    "seed": 0,
+    "plain": "64d1978268f1668c",
+    "contents": 1
+   },
+   "Fast_Echo_1": {
+    "k": 2,
+    "seed": 0,
+    "plain": "6f362aaac1bb8189",
+    "contents": 1
+   },
+   "Flippoty_flop": {
+    "k": 2,
+    "seed": 0,
+    "plain": "b2e50ffdc93780e0",
+    "contents": 1
+   },
+   "Flutter_11": {
+    "k": 2,
+    "seed": 0,
+    "plain": "1abbda5430cc1e89",
+    "contents": 1
+   },
+   "For_Arps": {
+    "k": 2,
+    "seed": 0,
+    "plain": "48609279b4a33f7b",
+    "contents": 2
+   },
+   "Growing_Oscillations": {
+    "k": 2,
+    "seed": 0,
+    "plain": "366b61209b6ae94d",
+    "contents": 6
+   },
+   "Growl_1": {
+    "k": 2,
+    "seed": 0,
+    "plain": "45a85963bd069fc9",
+    "contents": 1
+   },
+   "Haha_butt": {
+    "k": 2,
+    "seed": 0,
+    "plain": "5cb9d14e4778f34f",
+    "contents": 1
+   },
+   "Half_Sine": {
+    "k": 2,
+    "seed": 0,
+    "plain": "9e5cab1db78d8858",
+    "contents": 1
+   },
+   "Init": {
+    "k": 2,
+    "seed": 0,
+    "plain": "051853b2da48e9b2",
+    "contents": 1
+   },
+   "Keytrack_49-key": {
+    "k": 2,
+    "seed": 0,
+    "plain": "ae4c44867905d4a4",
+    "contents": 1
+   },
+   "LEAD1": {
+    "k": 2,
+    "seed": 0,
+    "plain": "4554c1e0cd8bd7a0",
+    "contents": 1
+   },
+   "Lofi_Move_1": {
+    "k": 2,
+    "seed": 0,
+    "plain": "8f7baa7e8ca02be6",
+    "contents": 3
+   },
+   "My_Little_Pony_Intro": {
+    "k": 2,
+    "seed": 0,
+    "plain": "e288281284b6d513",
+    "contents": 1
+   },
+   "Nervous_Groove": {
+    "k": 2,
+    "seed": 0,
+    "plain": "940afb969f679b18",
+    "contents": 5
+   },
+   "ON": {
+    "k": 2,
+    "seed": 0,
+    "plain": "d13917238c1ccf86",
+    "contents": 1
+   },
+   "PacMan": {
+    "k": 2,
+    "seed": 0,
+    "plain": "22509758746f29e9",
+    "contents": 2
+   },
+   "Pad_Movement_2": {
+    "k": 2,
+    "seed": 0,
+    "plain": "d1b8e0079dca93f8",
+    "contents": 1
+   },
+   "Pattern_7": {
+    "k": 2,
+    "seed": 0,
+    "plain": "2357a6e08f671ff2",
+    "contents": 1
+   },
+   "Pluck_Rhythm": {
+    "k": 2,
+    "seed": 0,
+    "plain": "53ee14049b13c058",
+    "contents": 1
+   },
+   "Pluck_Rhythm_2": {
+    "k": 2,
+    "seed": 0,
+    "plain": "1f5a7310897fbd49",
+    "contents": 1
+   },
+   "Pulse_Series": {
+    "k": 2,
+    "seed": 0,
+    "plain": "d4dbbd27a0597c68",
+    "contents": 7
+   },
+   "Ramp_Down": {
+    "k": 2,
+    "seed": 0,
+    "plain": "a6757bca3bd3fec1",
+    "contents": 1
+   },
+   "Random_Pulses": {
+    "k": 2,
+    "seed": 0,
+    "plain": "efdf07bc819cd01d",
+    "contents": 3
+   },
+   "Randomized": {
+    "k": 2,
+    "seed": 0,
+    "plain": "2b2ad6f262a70d75",
+    "contents": 1
+   },
+   "Reorganize_1": {
+    "k": 2,
+    "seed": 0,
+    "plain": "3dc31b6ce3326a67",
+    "contents": 1
+   },
+   "Reorganize_2": {
+    "k": 2,
+    "seed": 0,
+    "plain": "dc81b668a5235f4b",
+    "contents": 1
+   },
+   "Reorganize_3": {
+    "k": 2,
+    "seed": 0,
+    "plain": "3ce1f0cac58c0955",
+    "contents": 1
+   },
+   "Reorganize_4": {
+    "k": 2,
+    "seed": 0,
+    "plain": "c1a551ea6454cb5e",
+    "contents": 1
+   },
+   "Reorganize_5": {
+    "k": 2,
+    "seed": 0,
+    "plain": "aba879b455b6b63e",
+    "contents": 1
+   },
+   "Reorganize_6": {
+    "k": 2,
+    "seed": 0,
+    "plain": "1b91702db809b757",
+    "contents": 1
+   },
+   "Reorganize_7": {
+    "k": 2,
+    "seed": 0,
+    "plain": "d24a97ec2505ec88",
+    "contents": 1
+   },
+   "Rising_fall": {
+    "k": 2,
+    "seed": 0,
+    "plain": "4f7f2f5e87b97578",
+    "contents": 1
+   },
+   "SEQ-Melodic_Shuffling": {
+    "k": 2,
+    "seed": 0,
+    "plain": "3dc31b6ce3326a67",
+    "contents": 1
+   },
+   "Saw_Down": {
+    "k": 2,
+    "seed": 0,
+    "plain": "c3d6f2950c664720",
+    "contents": 54
+   },
+   "Saw_Up": {
+    "k": 2,
+    "seed": 0,
+    "plain": "976cd6a164e1ff84",
+    "contents": 56
+   },
+   "Scan_Through_2_-_fast_slow": {
+    "k": 2,
+    "seed": 0,
+    "plain": "12a831b194b6cb56",
+    "contents": 1
+   },
+   "Sequence_01": {
+    "k": 2,
+    "seed": 0,
+    "plain": "c70d4d4c22af97b1",
+    "contents": 1
+   },
+   "Sequence_02": {
+    "k": 2,
+    "seed": 0,
+    "plain": "ca69b603570362ed",
+    "contents": 1
+   },
+   "Sequence_05": {
+    "k": 2,
+    "seed": 0,
+    "plain": "cb888b879082d405",
+    "contents": 1
+   },
+   "Sequence_12": {
+    "k": 2,
+    "seed": 0,
+    "plain": "821c6fab0573925c",
+    "contents": 1
+   },
+   "Sequence_23": {
+    "k": 2,
+    "seed": 0,
+    "plain": "9003cd314921adb5",
+    "contents": 1
+   },
+   "Sharp_Rise-Fall": {
+    "k": 2,
+    "seed": 0,
+    "plain": "204d67db3b7d61f9",
+    "contents": 2
+   },
+   "Shuffle_Gate": {
+    "k": 2,
+    "seed": 0,
+    "plain": "6cdcbf12f807bb63",
+    "contents": 9
+   },
+   "Side_Chain_1": {
+    "k": 2,
+    "seed": 0,
+    "plain": "3032b60c9a5968ea",
+    "contents": 15
+   },
+   "Side_Chain_2": {
+    "k": 2,
+    "seed": 0,
+    "plain": "6a3303501cbf9503",
+    "contents": 9
+   },
+   "Sidechain": {
+    "k": 2,
+    "seed": 0,
+    "plain": "83289f51bea4385c",
+    "contents": 1
+   },
+   "Sin": {
+    "k": 2,
+    "seed": 2,
+    "plain": "a1506c5bec75214a",
+    "contents": 54
+   },
+   "Slow_Echo_3": {
+    "k": 2,
+    "seed": 0,
+    "plain": "e38c702ca2b5dc95",
+    "contents": 1
+   },
+   "Slowing_Warble": {
+    "k": 2,
+    "seed": 0,
+    "plain": "4098db39e64a6afd",
+    "contents": 1
+   },
+   "Snare": {
+    "k": 2,
+    "seed": 0,
+    "plain": "191746fc14f5a3ea",
+    "contents": 2
+   },
+   "Split_Gate": {
+    "k": 2,
+    "seed": 0,
+    "plain": "e7dbc1736950c860",
+    "contents": 7
+   },
+   "Square": {
+    "k": 2,
+    "seed": 0,
+    "plain": "3623f4fbe9fee572",
+    "contents": 40
+   },
+   "Staircase_Down": {
+    "k": 2,
+    "seed": 0,
+    "plain": "78f3ca5ef4ec6bc9",
+    "contents": 5
+   },
+   "Superfuturesaw": {
+    "k": 2,
+    "seed": 0,
+    "plain": "840f1d33ebafeb5c",
+    "contents": 3
+   },
+   "Syncopation_8_3-3-2": {
+    "k": 2,
+    "seed": 0,
+    "plain": "94295570c756a8fe",
+    "contents": 1
+   },
+   "Syncopation_9_3-3-3": {
+    "k": 2,
+    "seed": 0,
+    "plain": "a6b7868084dc3844",
+    "contents": 1
+   },
+   "Trance_Gate": {
+    "k": 2,
+    "seed": 0,
+    "plain": "21b9e9c6441aa68c",
+    "contents": 11
+   },
+   "Triangle": {
+    "k": 3,
+    "seed": 5547321,
+    "plain": "a1506c5bec75214a",
+    "contents": 2493
+   },
+   "VR": {
+    "k": 2,
+    "seed": 0,
+    "plain": "0aab435644322d44",
+    "contents": 1
+   },
+   "Velocity_Linn": {
+    "k": 2,
+    "seed": 0,
+    "plain": "33da304c80f1bbf5",
+    "contents": 1
+   },
+   "Vibrato": {
+    "k": 2,
+    "seed": 0,
+    "plain": "3e8e1940d4e610ef",
+    "contents": 1
+   },
+   "Volume_-Sidechain": {
+    "k": 2,
+    "seed": 0,
+    "plain": "a9e832bc6f35440c",
+    "contents": 1
+   },
+   "WFO2": {
+    "k": 2,
+    "seed": 0,
+    "plain": "683bd52b5be13013",
+    "contents": 1
+   },
+   "WHITEARMOR_GATE": {
+    "k": 2,
+    "seed": 0,
+    "plain": "409e1615ad4cd5e0",
+    "contents": 1
+   },
+   "WIP_-_zZ_Acoustic_Guitar_v2": {
+    "k": 2,
+    "seed": 0,
+    "plain": "cbd419c47826dabc",
+    "contents": 2
+   },
+   "Werid": {
+    "k": 2,
+    "seed": 0,
+    "plain": "0c983591b3331c73",
+    "contents": 1
+   },
+   "WhackFO_wfo": {
+    "k": 2,
+    "seed": 0,
+    "plain": "42cf1e5a8fe3c93b",
+    "contents": 1
+   },
+   "Wub_2": {
+    "k": 2,
+    "seed": 0,
+    "plain": "43966b84ce283836",
+    "contents": 1
+   },
+   "one_two": {
+    "k": 2,
+    "seed": 0,
+    "plain": "e00c9359686bb9d8",
+    "contents": 1
+   },
+   "progression_1": {
+    "k": 2,
+    "seed": 0,
+    "plain": "6a63c014360352ad",
+    "contents": 1
+   },
+   "rapid": {
+    "k": 2,
+    "seed": 0,
+    "plain": "89ded9c50647c2f0",
+    "contents": 1
+   },
+   "sequence_1": {
+    "k": 2,
+    "seed": 0,
+    "plain": "53905fe14f3c2e0c",
+    "contents": 2
+   },
+   "sharp_pluck_1": {
+    "k": 2,
+    "seed": 0,
+    "plain": "c226aee881e959dc",
+    "contents": 1
+   },
+   "slip": {
+    "k": 2,
+    "seed": 0,
+    "plain": "e9dd78cc6c7f79f1",
+    "contents": 1
+   },
+   "stepforchords": {
+    "k": 2,
+    "seed": 0,
+    "plain": "2771c8613ef577b3",
+    "contents": 1
+   },
+   "tri": {
+    "k": 2,
+    "seed": 0,
+    "plain": "3e8e1940d4e610ef",
+    "contents": 1
+   },
+   "zZ-69_Invasion": {
+    "k": 2,
+    "seed": 0,
+    "plain": "b2e50ffdc93780e0",
+    "contents": 1
+   },
+   "zZ-Lofi-Paino": {
+    "k": 2,
+    "seed": 0,
+    "plain": "7ff07c4972028259",
+    "contents": 2
+   },
+   "zZ-Lofi-Painof": {
+    "k": 2,
+    "seed": 0,
+    "plain": "6f2c5c64d0d8b03f",
+    "contents": 1
+   },
+   "zZ-New_born": {
+    "k": 2,
+    "seed": 0,
+    "plain": "d1efbe3add990d53",
+    "contents": 4
+   },
+   "zZ-Prophet_2": {
+    "k": 2,
+    "seed": 0,
+    "plain": "626fa7f288e52fba",
+    "contents": 1
+   }
+  },
+  "wt": {
+   "000": {
+    "k": 2,
+    "seed": 0,
+    "plain": "b97756f46834a0fc",
+    "contents": 6
+   },
+   "0000_Basic_Shapes": {
+    "k": 2,
+    "seed": 0,
+    "plain": "5f0effb7ee75b8a1",
+    "contents": 1
+   },
+   "0_Noisy": {
+    "k": 2,
+    "seed": 0,
+    "plain": "145bb01cbd4e5538",
+    "contents": 3
+   },
+   "13-Multiplex": {
+    "k": 2,
+    "seed": 0,
+    "plain": "db600ac2f1103971",
+    "contents": 1
+   },
+   "4noise": {
+    "k": 2,
+    "seed": 0,
+    "plain": "4bf2d893da98e9ab",
+    "contents": 1
+   },
+   "A2_5": {
+    "k": 2,
+    "seed": 0,
+    "plain": "4a409e7c5df56635",
+    "contents": 1
+   },
+   "AKWF_1226": {
+    "k": 2,
+    "seed": 0,
+    "plain": "4a7588f3f3140554",
+    "contents": 1
+   },
+   "Airy_Background_Bass_Stabs": {
+    "k": 2,
+    "seed": 0,
+    "plain": "7ed0c6e85fe738c0",
+    "contents": 1
+   },
+   "Amaranth_SQ": {
+    "k": 2,
+    "seed": 0,
+    "plain": "9e8192e664a58a37",
+    "contents": 1
+   },
+   "Amethyst_Star": {
+    "k": 2,
+    "seed": 0,
+    "plain": "389775727c844306",
+    "contents": 1
+   },
+   "Aquatic_Chamber": {
+    "k": 2,
+    "seed": 0,
+    "plain": "a391e7d17badb0c9",
+    "contents": 1
+   },
+   "BO-DNB8-BASS_94-4": {
+    "k": 2,
+    "seed": 0,
+    "plain": "df8db61ecc77053c",
+    "contents": 1
+   },
+   "BO-DNB8-REESE596": {
+    "k": 2,
+    "seed": 0,
+    "plain": "3127230d3c418137",
+    "contents": 1
+   },
+   "BO-DNB8-SYNTH_33-4": {
+    "k": 2,
+    "seed": 0,
+    "plain": "e64dd2ab46e78a03",
+    "contents": 1
+   },
+   "BURBLE_1": {
+    "k": 2,
+    "seed": 0,
+    "plain": "783a9c8cfc7e993d",
+    "contents": 1
+   },
+   "Basic_Shapes": {
+    "k": 2,
+    "seed": 6,
+    "plain": "11efcff6b16e40b7",
+    "contents": 79
+   },
+   "Basic_Shapes_(1)": {
+    "k": 2,
+    "seed": 0,
+    "plain": "1bc47588e87ede99",
+    "contents": 1
+   },
+   "Basic_Shapes_+": {
+    "k": 2,
+    "seed": 0,
+    "plain": "208107bcbf4845be",
+    "contents": 1
+   },
+   "Big_Grainy_Pad_Tweaked": {
+    "k": 2,
+    "seed": 0,
+    "plain": "10ea01db8d53f92e",
+    "contents": 1
+   },
+   "Bottle_C_03": {
+    "k": 2,
+    "seed": 0,
+    "plain": "1361e19b66e14079",
+    "contents": 1
+   },
+   "Buzz_Saw": {
+    "k": 2,
+    "seed": 0,
+    "plain": "a185c01ca8bceb0a",
+    "contents": 1
+   },
+   "Cat_D": {
+    "k": 2,
+    "seed": 0,
+    "plain": "2487769b4760efa8",
+    "contents": 1
+   },
+   "Charm": {
+    "k": 2,
+    "seed": 0,
+    "plain": "2c8100d228d819d9",
+    "contents": 1
+   },
+   "Classic_Blend": {
+    "k": 2,
+    "seed": 0,
+    "plain": "de113a73500f16b9",
+    "contents": 17
+   },
+   "Classic_Fade": {
+    "k": 2,
+    "seed": 0,
+    "plain": "bcfa8b658b88adac",
+    "contents": 14
+   },
+   "Clouds_of_Chaos": {
+    "k": 2,
+    "seed": 0,
+    "plain": "6fad025d6a155fd7",
+    "contents": 1
+   },
+   "CombPeak_F": {
+    "k": 2,
+    "seed": 0,
+    "plain": "250174fa7d530a62",
+    "contents": 1
+   },
+   "Comb_Combo": {
+    "k": 2,
+    "seed": 0,
+    "plain": "e3ea3a0924795082",
+    "contents": 1
+   },
+   "Comb_Screech": {
+    "k": 2,
+    "seed": 0,
+    "plain": "bf7564e6a2e5b682",
+    "contents": 1
+   },
+   "Crappy_Toilet": {
+    "k": 2,
+    "seed": 0,
+    "plain": "0c988bf546f7e7c9",
+    "contents": 1
+   },
+   "Crease": {
+    "k": 2,
+    "seed": 0,
+    "plain": "d3f860b3a7bae6ce",
+    "contents": 1
+   },
+   "Creepy_Solar": {
+    "k": 2,
+    "seed": 0,
+    "plain": "49a6bdbba7f7c160",
+    "contents": 1
+   },
+   "Crushed_Harmonics": {
+    "k": 2,
+    "seed": 0,
+    "plain": "b0de31dfa2babd6b",
+    "contents": 1
+   },
+   "Crystal_Sweep": {
+    "k": 2,
+    "seed": 0,
+    "plain": "f8f3fd238e7d7af4",
+    "contents": 1
+   },
+   "Cymatics_-_Dubstep_Piano_Loop_1_-_150_BPM_E_Min": {
+    "k": 2,
+    "seed": 0,
+    "plain": "80d713c502a7ecc9",
+    "contents": 1
+   },
+   "Cymatics_-_Impact_74": {
+    "k": 2,
+    "seed": 0,
+    "plain": "02c994c4eb7c9cbf",
+    "contents": 1
+   },
+   "Cymatics_-_Pandora_Dizi_1_-_C": {
+    "k": 2,
+    "seed": 0,
+    "plain": "dd99efc028d93d23",
+    "contents": 1
+   },
+   "DC_Width": {
+    "k": 2,
+    "seed": 0,
+    "plain": "2a78ad0d74c75fcc",
+    "contents": 1
+   },
+   "Derive": {
+    "k": 2,
+    "seed": 0,
+    "plain": "4a0446f09d799004",
+    "contents": 1
+   },
+   "Didg": {
+    "k": 2,
+    "seed": 0,
+    "plain": "d7a48b67c3e2e0f0",
+    "contents": 8
+   },
+   "Dirty_Saw_1": {
+    "k": 2,
+    "seed": 0,
+    "plain": "dc0b595e5ff731f2",
+    "contents": 1
+   },
+   "Dirty_Square": {
+    "k": 2,
+    "seed": 0,
+    "plain": "9fa9c5789629832a",
+    "contents": 1
+   },
+   "Dissonant": {
+    "k": 2,
+    "seed": 0,
+    "plain": "9d0e2ebcc45d7622",
+    "contents": 1
+   },
+   "Drink_the_Juice": {
+    "k": 2,
+    "seed": 0,
+    "plain": "64aec27e6b8814fe",
+    "contents": 1
+   },
+   "Drive": {
+    "k": 2,
+    "seed": 0,
+    "plain": "4948beedb94b3072",
+    "contents": 2
+   },
+   "ESW_Analog_-_Circle_PWM": {
+    "k": 2,
+    "seed": 0,
+    "plain": "2b6aef7cdf3fe3a7",
+    "contents": 2
+   },
+   "ESW_Analog_-_Juno_60_Sine_01": {
+    "k": 2,
+    "seed": 0,
+    "plain": "f48edbaa3f54964b",
+    "contents": 1
+   },
+   "ESW_Analog_-_Jupiter_8_Saw": {
+    "k": 2,
+    "seed": 0,
+    "plain": "5810e66d8c882bc6",
+    "contents": 1
+   },
+   "ESW_Analog_-_Russians": {
+    "k": 2,
+    "seed": 0,
+    "plain": "7b331eda46c789c4",
+    "contents": 1
+   },
+   "Ecto": {
+    "k": 2,
+    "seed": 0,
+    "plain": "b84015eacbd8256b",
+    "contents": 1
+   },
+   "EfEm": {
+    "k": 2,
+    "seed": 0,
+    "plain": "c8ee1663cd07f766",
+    "contents": 1
+   },
+   "Feral": {
+    "k": 2,
+    "seed": 0,
+    "plain": "06a9a840d291fecd",
+    "contents": 1
+   },
+   "Fiddle": {
+    "k": 2,
+    "seed": 0,
+    "plain": "50638ce36357b31e",
+    "contents": 1
+   },
+   "Filtered_FM": {
+    "k": 2,
+    "seed": 0,
+    "plain": "2759334c873cfcc8",
+    "contents": 1
+   },
+   "Floor": {
+    "k": 2,
+    "seed": 0,
+    "plain": "6e011d7c091fdbd3",
+    "contents": 1
+   },
+   "For_Wind": {
+    "k": 2,
+    "seed": 0,
+    "plain": "dc3deca8d3583116",
+    "contents": 1
+   },
+   "GORILAL_MOD": {
+    "k": 2,
+    "seed": 0,
+    "plain": "ac1f3b158f2ca6ca",
+    "contents": 2
+   },
+   "Galactic_Treacle": {
+    "k": 2,
+    "seed": 0,
+    "plain": "d3528bcc0d410c20",
+    "contents": 1
+   },
+   "Glassy": {
+    "k": 2,
+    "seed": 0,
+    "plain": "127b1e0a773f24dd",
+    "contents": 1
+   },
+   "Glocke": {
+    "k": 2,
+    "seed": 0,
+    "plain": "19164183de3abd62",
+    "contents": 1
+   },
+   "Gorgon": {
+    "k": 2,
+    "seed": 0,
+    "plain": "f770549d5594a71e",
+    "contents": 1
+   },
+   "Gravity_Bass_Loop_Emin": {
+    "k": 2,
+    "seed": 0,
+    "plain": "ac64cbe9e6cb9fa0",
+    "contents": 1
+   },
+   "Grist": {
+    "k": 2,
+    "seed": 0,
+    "plain": "d922722656a67edc",
+    "contents": 1
+   },
+   "Growly_2": {
+    "k": 2,
+    "seed": 0,
+    "plain": "47767f9d864f6ea0",
+    "contents": 1
+   },
+   "Grungle_berry": {
+    "k": 2,
+    "seed": 0,
+    "plain": "dfa7b287304c0d55",
+    "contents": 1
+   },
+   "Harmonic_Resynthesis": {
+    "k": 2,
+    "seed": 0,
+    "plain": "4483e3c996eec84f",
+    "contents": 3
+   },
+   "Harmonic_Series": {
+    "k": 2,
+    "seed": 1,
+    "plain": "d11c4a91c1bb7b53",
+    "contents": 19
+   },
+   "Hyper_808": {
+    "k": 2,
+    "seed": 0,
+    "plain": "d3e9266e996d46f1",
+    "contents": 1
+   },
+   "Hyperplastiq": {
+    "k": 2,
+    "seed": 0,
+    "plain": "614873f2e5f0c888",
+    "contents": 1
+   },
+   "Inharmonicon": {
+    "k": 2,
+    "seed": 0,
+    "plain": "44fb9d70fd5f7a82",
+    "contents": 1
+   },
+   "Init": {
+    "k": 2,
+    "seed": 68,
+    "plain": "e87544332bedf000",
+    "contents": 159
+   },
+   "Jonesy_B_-_Mega_Brass_F": {
+    "k": 2,
+    "seed": 0,
+    "plain": "a368b4a6d29340e0",
+    "contents": 1
+   },
+   "KICK": {
+    "k": 2,
+    "seed": 0,
+    "plain": "6394445c4b12bf87",
+    "contents": 1
+   },
+   "Lazor1": {
+    "k": 2,
+    "seed": 0,
+    "plain": "8e0a15f8523cfd1f",
+    "contents": 1
+   },
+   "Low_High_Fold": {
+    "k": 2,
+    "seed": 0,
+    "plain": "2f39ef64cc3e699f",
+    "contents": 8
+   },
+   "MG_2osc_c": {
+    "k": 2,
+    "seed": 0,
+    "plain": "6c6469f79a94fdde",
+    "contents": 1
+   },
+   "Mechanical": {
+    "k": 2,
+    "seed": 0,
+    "plain": "a43f4253c2982525",
+    "contents": 1
+   },
+   "Microsoft_Sam_-_Windows_XP": {
+    "k": 2,
+    "seed": 0,
+    "plain": "79274032459bb640",
+    "contents": 1
+   },
+   "Mountains": {
+    "k": 2,
+    "seed": 0,
+    "plain": "b0823d5cdce47bbf",
+    "contents": 2
+   },
+   "Mudokon": {
+    "k": 2,
+    "seed": 0,
+    "plain": "c3d1d51982c5ee70",
+    "contents": 1
+   },
+   "MutaKeys": {
+    "k": 2,
+    "seed": 0,
+    "plain": "2fce4db19aa8da12",
+    "contents": 1
+   },
+   "Not_Pigments": {
+    "k": 2,
+    "seed": 0,
+    "plain": "ce8ea00f2a153401",
+    "contents": 1
+   },
+   "Not_Serum": {
+    "k": 2,
+    "seed": 0,
+    "plain": "b42b1e59df95f2ef",
+    "contents": 1
+   },
+   "OB_Saw": {
+    "k": 2,
+    "seed": 0,
+    "plain": "22f3d81df7de2097",
+    "contents": 1
+   },
+   "Operator": {
+    "k": 2,
+    "seed": 0,
+    "plain": "b6990378dc8d06b5",
+    "contents": 1
+   },
+   "OrganCrusher": {
+    "k": 2,
+    "seed": 0,
+    "plain": "8e1019c9facf77cf",
+    "contents": 1
+   },
+   "Organ_Like": {
+    "k": 2,
+    "seed": 0,
+    "plain": "e6ae48e2f3b04360",
+    "contents": 1
+   },
+   "Phase_Shifter": {
+    "k": 2,
+    "seed": 0,
+    "plain": "ab0c622df58b3568",
+    "contents": 1
+   },
+   "Pinch": {
+    "k": 2,
+    "seed": 0,
+    "plain": "ac0d516112c6ba1d",
+    "contents": 1
+   },
+   "Post_Modern_Pulse": {
+    "k": 2,
+    "seed": 0,
+    "plain": "e687a26c7b100970",
+    "contents": 10
+   },
+   "Pulse_Width": {
+    "k": 2,
+    "seed": 0,
+    "plain": "4d88652b20eb0d64",
+    "contents": 19
+   },
+   "Quad_Saw": {
+    "k": 2,
+    "seed": 0,
+    "plain": "01be3dd29c84d865",
+    "contents": 11
+   },
+   "Re-sample_Mess": {
+    "k": 2,
+    "seed": 0,
+    "plain": "efd69b7f9fe84997",
+    "contents": 1
+   },
+   "Resynthesize": {
+    "k": 2,
+    "seed": 0,
+    "plain": "29bffaa894bce7cd",
+    "contents": 15
+   },
+   "Samcrosoft_Mike_2": {
+    "k": 2,
+    "seed": 0,
+    "plain": "ba3cca7e1c8b9da0",
+    "contents": 1
+   },
+   "Saw_Octaves": {
+    "k": 2,
+    "seed": 0,
+    "plain": "3cb0f4ef13568bf4",
+    "contents": 1
+   },
+   "Saw_to_Sq_to_Sine": {
+    "k": 2,
+    "seed": 0,
+    "plain": "cb9f927b19638e6d",
+    "contents": 3
+   },
+   "Saw_to_Sq_to_Tri": {
+    "k": 2,
+    "seed": 0,
+    "plain": "3cbe1aa07a783a9d",
+    "contents": 2
+   },
+   "Saws_for_Days": {
+    "k": 2,
+    "seed": 0,
+    "plain": "2171607c74e2f249",
+    "contents": 9
+   },
+   "Sheparding_Octaves": {
+    "k": 2,
+    "seed": 0,
+    "plain": "7b5bbec8a21dffa0",
+    "contents": 5
+   },
+   "Sine": {
+    "k": 2,
+    "seed": 0,
+    "plain": "af7f169cd6ca04fd",
+    "contents": 2
+   },
+   "SineSawFold": {
+    "k": 2,
+    "seed": 0,
+    "plain": "6066cabedbfada93",
+    "contents": 1
+   },
+   "Sine_Compression_WT": {
+    "k": 2,
+    "seed": 0,
+    "plain": "68cc8c51e7d3832f",
+    "contents": 1
+   },
+   "Sine_Mess": {
+    "k": 2,
+    "seed": 0,
+    "plain": "7d5e8639357f5458",
+    "contents": 1
+   },
+   "Sine_to_Saw": {
+    "k": 2,
+    "seed": 0,
+    "plain": "5b5b95c96ed01006",
+    "contents": 9
+   },
+   "Sloper": {
+    "k": 2,
+    "seed": 0,
+    "plain": "01dd0957c031b09b",
+    "contents": 1
+   },
+   "Slurp_Like": {
+    "k": 2,
+    "seed": 0,
+    "plain": "84889b5b17cef79f",
+    "contents": 1
+   },
+   "Snare_3": {
+    "k": 2,
+    "seed": 0,
+    "plain": "2f9a01d8c74ee8e0",
+    "contents": 1
+   },
+   "Spectral_Chatter": {
+    "k": 2,
+    "seed": 0,
+    "plain": "544e4662f8d947cb",
+    "contents": 1
+   },
+   "Square_to_Saw": {
+    "k": 2,
+    "seed": 0,
+    "plain": "4a4d05da94e2100a",
+    "contents": 2
+   },
+   "Squarified": {
+    "k": 2,
+    "seed": 0,
+    "plain": "0ab44738effeedd3",
+    "contents": 1
+   },
+   "Squashed_Comb": {
+    "k": 2,
+    "seed": 0,
+    "plain": "991111b24e9a075e",
+    "contents": 1
+   },
+   "Squeechy": {
+    "k": 2,
+    "seed": 0,
+    "plain": "cd76a6fe534933f6",
+    "contents": 1
+   },
+   "Squishy_Alien": {
+    "k": 2,
+    "seed": 0,
+    "plain": "9b8389ae64248809",
+    "contents": 1
+   },
+   "Sub": {
+    "k": 2,
+    "seed": 0,
+    "plain": "3947ba01cf30bfb9",
+    "contents": 8
+   },
+   "TTWT": {
+    "k": 2,
+    "seed": 0,
+    "plain": "747cddc50fc3f474",
+    "contents": 3
+   },
+   "Telecaster_01": {
+    "k": 2,
+    "seed": 0,
+    "plain": "6854fc57b68289cc",
+    "contents": 1
+   },
+   "Telecaster_02": {
+    "k": 2,
+    "seed": 0,
+    "plain": "d6644472ed15f81a",
+    "contents": 1
+   },
+   "The_Funny": {
+    "k": 2,
+    "seed": 0,
+    "plain": "f6173a4152c7980c",
+    "contents": 1
+   },
+   "The_Unfunny": {
+    "k": 2,
+    "seed": 0,
+    "plain": "85c9eed2d223f365",
+    "contents": 1
+   },
+   "Three_Graces": {
+    "k": 2,
+    "seed": 0,
+    "plain": "7cc9addf786f3632",
+    "contents": 5
+   },
+   "Tibetan_Bowl": {
+    "k": 2,
+    "seed": 0,
+    "plain": "f38d8fbe2a2ec46e",
+    "contents": 1
+   },
+   "Timeframe": {
+    "k": 2,
+    "seed": 0,
+    "plain": "9f9e7af0391a4e05",
+    "contents": 1
+   },
+   "Toilet_Resynthesis_2": {
+    "k": 2,
+    "seed": 0,
+    "plain": "33ea6435a47b8ead",
+    "contents": 1
+   },
+   "Too_Many_Faders": {
+    "k": 2,
+    "seed": 0,
+    "plain": "6e81755881da888b",
+    "contents": 1
+   },
+   "Too_Many_Knobs": {
+    "k": 2,
+    "seed": 0,
+    "plain": "0d0496a3318a59c3",
+    "contents": 1
+   },
+   "Transmutated": {
+    "k": 2,
+    "seed": 0,
+    "plain": "f3c556ec2105c613",
+    "contents": 1
+   },
+   "Triangle": {
+    "k": 2,
+    "seed": 0,
+    "plain": "9331c5e0b8eb13de",
+    "contents": 1
+   },
+   "Triangle_Pulse": {
+    "k": 2,
+    "seed": 0,
+    "plain": "af3979673f4f1db0",
+    "contents": 1
+   },
+   "V_Like_Vital": {
+    "k": 2,
+    "seed": 0,
+    "plain": "6a817f77b7b7626c",
+    "contents": 1
+   },
+   "Vibey_Saw": {
+    "k": 2,
+    "seed": 0,
+    "plain": "a2e0a9dd2c6fcd04",
+    "contents": 1
+   },
+   "Vital_Sine": {
+    "k": 2,
+    "seed": 0,
+    "plain": "ccf71852553582d5",
+    "contents": 13
+   },
+   "Vital_Sine_2": {
+    "k": 2,
+    "seed": 0,
+    "plain": "1522361b51e534c9",
+    "contents": 9
+   },
+   "WT2": {
+    "k": 2,
+    "seed": 0,
+    "plain": "010cf74fa2dd320d",
+    "contents": 1
+   },
+   "WT_-_Diversity": {
+    "k": 2,
+    "seed": 0,
+    "plain": "d4e705e10485aa44",
+    "contents": 1
+   },
+   "Waht_the_fcrick": {
+    "k": 2,
+    "seed": 0,
+    "plain": "5871de14a5e5e340",
+    "contents": 1
+   },
+   "Water_Razor": {
+    "k": 2,
+    "seed": 0,
+    "plain": "f6c863951e6e35e5",
+    "contents": 1
+   },
+   "Weird_Morphing": {
+    "k": 2,
+    "seed": 0,
+    "plain": "dc9d5fc24808e5aa",
+    "contents": 1
+   },
+   "WhatsApp_Audio_2020-11-27_at_22.10.43_2": {
+    "k": 2,
+    "seed": 0,
+    "plain": "1a03e4feee077dda",
+    "contents": 1
+   },
+   "Whats_Going": {
+    "k": 2,
+    "seed": 0,
+    "plain": "143cf39699e5a7cb",
+    "contents": 1
+   },
+   "Witch": {
+    "k": 2,
+    "seed": 0,
+    "plain": "61a03f8cb77bb01b",
+    "contents": 1
+   },
+   "Wrap_Me": {
+    "k": 2,
+    "seed": 0,
+    "plain": "0335cf9f0fc26ab4",
+    "contents": 1
+   },
+   "Zapped_Out": {
+    "k": 2,
+    "seed": 0,
+    "plain": "9204dad9ecadb75a",
+    "contents": 1
+   },
+   "Zine": {
+    "k": 2,
+    "seed": 0,
+    "plain": "e13fd1cc5f757e6d",
+    "contents": 5
+   },
+   "_C2CA8CD0-DF24-4D97-A463-1A1446652ADA_": {
+    "k": 2,
+    "seed": 0,
+    "plain": "0c02c612402414c9",
+    "contents": 1
+   },
+   "aa_ao_ax": {
+    "k": 2,
+    "seed": 0,
+    "plain": "360a75dd4b11a0a7",
+    "contents": 1
+   },
+   "atonal_4": {
+    "k": 2,
+    "seed": 0,
+    "plain": "2c94ee601a6ab2fc",
+    "contents": 1
+   },
+   "basic_shapes": {
+    "k": 2,
+    "seed": 0,
+    "plain": "df57eb8fe1b0f2ff",
+    "contents": 1
+   },
+   "bell_body": {
+    "k": 2,
+    "seed": 0,
+    "plain": "ad837722ea0ebaec",
+    "contents": 1
+   },
+   "bottle_womp": {
+    "k": 2,
+    "seed": 0,
+    "plain": "9b943eac07d9c17a",
+    "contents": 1
+   },
+   "cardboard_cube": {
+    "k": 2,
+    "seed": 0,
+    "plain": "1a5f5de9b7393b67",
+    "contents": 5
+   },
+   "coleslaw_bites": {
+    "k": 2,
+    "seed": 0,
+    "plain": "5622021bd762f0e5",
+    "contents": 3
+   },
+   "comb_abuse": {
+    "k": 2,
+    "seed": 0,
+    "plain": "80f56ecc73cf31dc",
+    "contents": 1
+   },
+   "cookie_jar": {
+    "k": 2,
+    "seed": 0,
+    "plain": "d2246ed3054b8de0",
+    "contents": 2
+   },
+   "dc": {
+    "k": 2,
+    "seed": 0,
+    "plain": "27d81c15f9a39029",
+    "contents": 1
+   },
+   "death": {
+    "k": 2,
+    "seed": 0,
+    "plain": "810c4dd80b1f013e",
+    "contents": 1
+   },
+   "donk_2": {
+    "k": 2,
+    "seed": 0,
+    "plain": "480dd992345c25b4",
+    "contents": 1
+   },
+   "dr_ushuu_-_gunshot": {
+    "k": 2,
+    "seed": 0,
+    "plain": "1dafee6fd9e0dad1",
+    "contents": 1
+   },
+   "e": {
+    "k": 2,
+    "seed": 0,
+    "plain": "5ef4f1e1d4389c7f",
+    "contents": 1
+   },
+   "h": {
+    "k": 2,
+    "seed": 0,
+    "plain": "a4e915c760ed0529",
+    "contents": 1
+   },
+   "hollow_walmart": {
+    "k": 2,
+    "seed": 0,
+    "plain": "3e69fcbcc7e68fba",
+    "contents": 3
+   },
+   "mhak_Kick_39_F#_6": {
+    "k": 2,
+    "seed": 0,
+    "plain": "527743abd782806a",
+    "contents": 2
+   },
+   "obxdpad1": {
+    "k": 2,
+    "seed": 0,
+    "plain": "35d5979779102f47",
+    "contents": 2
+   },
+   "obxdpad2": {
+    "k": 2,
+    "seed": 0,
+    "plain": "5518ec856d485a6a",
+    "contents": 2
+   },
+   "odd_thirds": {
+    "k": 2,
+    "seed": 0,
+    "plain": "17174bc2c385e81e",
+    "contents": 1
+   },
+   "plastic_scissors": {
+    "k": 2,
+    "seed": 0,
+    "plain": "a6fcaee6ef4b6fe6",
+    "contents": 1
+   },
+   "pulse1": {
+    "k": 2,
+    "seed": 0,
+    "plain": "7b8b88e9b37bfd15",
+    "contents": 1
+   },
+   "pulse2": {
+    "k": 2,
+    "seed": 0,
+    "plain": "35be060407fb73fc",
+    "contents": 1
+   },
+   "rectisine": {
+    "k": 2,
+    "seed": 0,
+    "plain": "696240f1c222b3f0",
+    "contents": 1
+   },
+   "recycled_hooks": {
+    "k": 2,
+    "seed": 0,
+    "plain": "95a85dbea67263c1",
+    "contents": 1
+   },
+   "saw": {
+    "k": 2,
+    "seed": 0,
+    "plain": "e207a613d3cc97ad",
+    "contents": 1
+   },
+   "scratch_4": {
+    "k": 2,
+    "seed": 0,
+    "plain": "44e30210111e60ac",
+    "contents": 2
+   },
+   "screecher_2": {
+    "k": 2,
+    "seed": 0,
+    "plain": "9b1010130805224d",
+    "contents": 1
+   },
+   "sex": {
+    "k": 2,
+    "seed": 0,
+    "plain": "264208b6bf2eacbd",
+    "contents": 1
+   },
+   "sub": {
+    "k": 2,
+    "seed": 0,
+    "plain": "85829bb7bb4ae1c4",
+    "contents": 5
+   },
+   "taste_test": {
+    "k": 2,
+    "seed": 0,
+    "plain": "afa9e09b1cc23f9f",
+    "contents": 2
+   },
+   "vocodex_phaser": {
+    "k": 2,
+    "seed": 0,
+    "plain": "2c5303d47d19f324",
+    "contents": 1
+   },
+   "vocodex_phaser_time_skewed": {
+    "k": 2,
+    "seed": 0,
+    "plain": "f951e8499ee7b858",
+    "contents": 1
+   },
+   "weird_wt_test": {
+    "k": 2,
+    "seed": 0,
+    "plain": "597d41e31d4f8e3c",
+    "contents": 1
+   },
+   "window_warp": {
+    "k": 2,
+    "seed": 0,
+    "plain": "e4b99bafbd1c7caf",
+    "contents": 1
+   }
+  },
+  "blob": {
+   "AUDIO_FILE": {
+    "k": 3,
+    "seed": 12,
+    "plain": null,
+    "contents": 1275
+   },
+   "SAMPLES": {
+    "k": 3,
+    "seed": 20,
+    "plain": null,
+    "contents": 1252
+   },
+   "SAMPLES_STEREO": {
+    "k": 2,
+    "seed": 996,
+    "plain": null,
+    "contents": 255
+   },
+   "WAVE_DATA": {
+    "k": 3,
+    "seed": 0,
+    "plain": null,
+    "contents": 578
+   }
+  }
+ }
+}

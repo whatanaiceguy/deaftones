@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>deaftones</title>
+<style>
+:root{--bg:#0f1012;--side:#141518;--panel:#17191c;--field:#0c0d0f;--line:#24262a;--line2:#2e3136;--text:#e6e7e9;--soft:#b4b8bf;--mute:#868b93;--dim:#5b5f66;--acc:#d8a85c;--acc2:#e6b96e;--warn:#d9a35b;--bad:#e07a6f}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif;display:grid;grid-template-columns:360px 1fr;overflow:hidden}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+
+aside{background:var(--side);border-right:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
+.top{display:flex;align-items:center;justify-content:space-between;padding:18px 20px 0}
+.brand{font-weight:700;font-size:16px;letter-spacing:.01em}
+.state{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--mute)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--dim);flex:none}
+.dot.ok{background:#7fb38f}.dot.wait{background:var(--acc);animation:pulse 1.2s ease-in-out infinite}.dot.bad{background:var(--bad)}
+@keyframes pulse{50%{opacity:.3}}
+.loaderr{margin:10px 20px 0;color:var(--bad);font-size:12.5px}
+
+.create{padding:18px 20px 20px;display:flex;flex-direction:column;gap:12px;border-bottom:1px solid var(--line)}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);background:var(--field);border:1px solid var(--line);border-radius:10px;padding:3px;gap:3px}
+.seg button{border:0;background:none;color:var(--mute);padding:7px 0;border-radius:7px;font-weight:500}
+.seg button:hover:not(:disabled){color:var(--text)}
+.seg button.on{background:#2a2d32;color:var(--text)}
+.seg button:disabled{cursor:default}
+textarea{width:100%;background:var(--field);border:1px solid var(--line);border-radius:10px;padding:11px 13px;font-size:15px;line-height:1.5;resize:none;outline:0;height:112px}
+textarea:focus{border-color:#4a4d54}
+textarea::placeholder{color:var(--dim)}
+.gen{width:100%;border:0;border-radius:10px;background:var(--acc);color:#1d1508;font-weight:650;font-size:15px;padding:11px 0}
+.gen:hover:not(:disabled){background:var(--acc2)}
+.gen:disabled{background:#3b3427;color:#7d6c4f;cursor:default}
+.adv{font-size:12.5px;color:var(--mute)}
+.adv summary{cursor:pointer;list-style:none;user-select:none;display:inline-flex;align-items:center;gap:6px}
+.adv summary::-webkit-details-marker{display:none}
+.adv summary::before{content:"";width:0;height:0;border:4px solid transparent;border-left:5px solid currentColor;margin-left:1px}
+.adv[open] summary::before{transform:rotate(90deg);transform-origin:30% 50%}
+.adv summary:hover{color:var(--text)}
+.advrow{display:flex;gap:16px;margin-top:10px}
+.advrow label{display:flex;align-items:center;gap:8px}
+.advrow input{width:58px;background:var(--field);border:1px solid var(--line);border-radius:7px;padding:4px 8px;outline:0}
+
+.libhead{display:flex;justify-content:space-between;padding:16px 20px 8px;font-size:12px;color:var(--mute);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+#lib{flex:1;overflow:auto;padding:0 10px 14px}
+.row{display:flex;align-items:center;gap:12px;padding:9px 10px;border-radius:10px;cursor:pointer}
+.row:hover{background:#1a1c1f}
+.row.sel{background:#202227}
+.rp{width:32px;height:32px;border-radius:50%;border:1px solid var(--line2);background:transparent;display:grid;place-items:center;flex:none;padding:0}
+.rp:hover{background:#2a2d32;border-color:#3a3d43}
+.rp svg{fill:var(--soft)}
+.row.playing .rp{background:var(--acc);border-color:transparent}
+.row.playing .rp svg{fill:#1d1508}
+.rp.off{visibility:hidden}
+.spin{width:32px;height:32px;flex:none;display:grid;place-items:center}
+.spin::after{content:"";width:16px;height:16px;border-radius:50%;border:2px solid #3a3d43;border-top-color:var(--acc);animation:rot .9s linear infinite}
+@keyframes rot{to{transform:rotate(360deg)}}
+.rt{min-width:0;flex:1}
+.rn{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rq{color:var(--mute);font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rs{font-size:11.5px;color:var(--mute);flex:none}
+.libempty{color:var(--dim);font-size:13px;padding:6px 12px}
+
+#detail{overflow:hidden;min-height:0}
+.wrap{padding:34px 44px 28px;max-width:1560px;margin:0 auto;height:100%;display:flex;flex-direction:column}
+.head{flex:none}
+.head > div + div{margin-top:18px}
+.cols{flex:1;min-height:0;display:flex;flex-direction:column;padding-top:18px}
+.ch{flex:none;display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.ch .sp{flex:1}
+.sw{display:inline-flex;background:var(--field);border:1px solid var(--line);border-radius:9px;padding:3px;gap:2px}
+.sw button{border:0;background:none;color:var(--mute);padding:5px 14px;border-radius:6px;font-size:13px;font-weight:500}
+.sw button:hover{color:var(--text)}
+.sw button.on{background:#2a2d32;color:var(--text)}
+#pane{flex:1;min-height:0;overflow:auto;background:var(--field);border:1px solid var(--line);border-radius:12px;padding:18px 22px}
+.kicker{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+h1{font-size:30px;line-height:1.2;font-weight:700;margin:6px 0 6px;letter-spacing:-.01em;word-break:break-word}
+.ask{color:var(--soft);font-size:15px;margin:0}
+.ask::before{content:"\201C"}.ask::after{content:"\201D"}
+.stats{margin-top:10px;font-size:13px;color:var(--mute);font-variant-numeric:tabular-nums}
+
+.file{display:flex;align-items:center;gap:18px;padding:14px 18px 14px 14px;background:var(--panel);border:1px solid var(--line);border-radius:12px}
+.play{width:44px;height:44px;border-radius:50%;border:0;background:var(--text);display:grid;place-items:center;flex:none;padding:0}
+.play:hover{background:#fff}
+.play svg{fill:#121315}
+.ficon{width:44px;height:44px;border-radius:8px;background:#24272c;display:grid;place-items:center;font-size:9.5px;font-weight:700;color:var(--soft);letter-spacing:.04em;flex:none}
+.fx{min-width:0;flex:1}
+.fname{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fsub{font-size:12.5px;color:var(--mute)}
+.prog{display:flex;align-items:center;gap:12px;margin-top:7px}
+.track{flex:1;height:18px;display:flex;align-items:center;cursor:pointer;touch-action:none}
+.track div{height:4px;width:100%;background:var(--line2);border-radius:2px}
+.track span{display:block;height:100%;width:0;background:var(--acc);border-radius:2px;position:relative}
+.track span::after{content:"";position:absolute;right:-6px;top:50%;width:12px;height:12px;margin-top:-6px;border-radius:50%;background:var(--text);opacity:0;transition:opacity .12s}
+.track:hover span::after,.track.drag span::after{opacity:1}
+.time{font-size:12px;color:var(--mute);font-variant-numeric:tabular-nums;flex:none}
+.vol{display:flex;align-items:center;gap:8px;flex:none}
+.vol button{border:0;background:none;padding:4px;display:grid;place-items:center;border-radius:6px}
+.vol button:hover{background:#25282d}
+.vol svg{fill:var(--soft)}
+.vol input{width:96px;accent-color:var(--soft);cursor:pointer}
+.btn{border:1px solid var(--line2);background:#202227;border-radius:9px;padding:8px 14px;font-weight:500;white-space:nowrap}
+.btn:hover{background:#272a2f}
+.btn.small{padding:5px 12px;font-size:13px}
+.btn.icon{padding:0;width:38px;height:38px;display:grid;place-items:center}
+.btn.icon svg{fill:var(--soft)}
+.btn.arm{width:auto;padding:0 14px;background:#3a1f1d;border-color:#5a2a26;color:#f0a49b}
+
+.msg{margin-top:12px;font-size:13px;color:var(--soft);display:flex;gap:8px}
+.msg.warn{color:var(--warn)}.msg.bad{color:var(--bad)}
+.conv{margin-top:12px;font-size:13px;color:var(--mute)}
+.conv summary{cursor:pointer;list-style:none}
+.conv summary::-webkit-details-marker{display:none}
+.conv summary:hover{color:var(--text)}
+.conv pre{margin:8px 0 0;white-space:pre-wrap;font:12px/1.6 ui-monospace,"Cascadia Mono",Consolas,monospace;color:var(--soft)}
+
+.livebox{display:flex;align-items:center;gap:16px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:0 18px;height:74px}
+.bar{flex:1;height:3px;background:var(--line2);border-radius:2px;overflow:hidden;position:relative}
+.bar::after{content:"";position:absolute;inset:0;width:30%;background:var(--acc);animation:slide 1.6s ease-in-out infinite}
+@keyframes slide{from{left:-30%}to{left:100%}}
+
+.prose{color:var(--soft);white-space:pre-wrap;line-height:1.75;font-size:14.5px;max-width:92ch}
+pre.idc{margin:0;white-space:pre-wrap;color:#d3d6da;font:12.5px/1.65 ui-monospace,"Cascadia Mono",Consolas,monospace}
+.idc .c{color:#6a6f77}.idc .m{color:var(--acc)}.idc .k{color:#9cc4b0;font-weight:600}.idc .kk{color:#848891}
+.wait{color:var(--dim)}
+
+.empty{height:100%;display:grid;place-items:center;padding:40px}
+.empty div{max-width:420px;text-align:center}
+.empty h2{margin:0 0 8px;font-size:20px;font-weight:650}
+.empty p{margin:0;color:var(--mute);line-height:1.6}
+
+::-webkit-scrollbar{width:10px;height:10px}::-webkit-scrollbar-thumb{background:#2a2c31;border-radius:5px;border:2px solid transparent;background-clip:padding-box}::-webkit-scrollbar-track{background:transparent}
+</style>
+</head>
+<body>
+<aside>
+  <div class="top"><span class="brand">deaftones</span><span class="state"><span class="dot wait" id="mdot"></span><span id="mtext">Loading model</span></span></div>
+  <div class="loaderr" id="loaderr" hidden></div>
+  <div class="create">
+    <div class="seg" id="synths"><button data-s="serum2" class="on">Serum 2</button><button data-s="vital">Vital</button><button data-s="diva">Diva</button></div>
+    <textarea id="req" placeholder="Describe the sound you want to hear, e.g. a warm analog pad that slowly opens up"></textarea>
+    <button class="gen" id="go" title="Ctrl+Enter" disabled>Generate preset</button>
+    <details class="adv"><summary>Sampling</summary><div class="advrow"><label>Temperature<input id="temp" value="0.9"></label><label>Top-k<input id="topk" value="45"></label></div></details>
+  </div>
+  <div class="libhead"><span>Library</span><span id="count"></span></div>
+  <div id="lib"></div>
+</aside>
+<section id="detail"></section>
+<script>
+const $ = id => document.getElementById(id);
+const NAMES = {serum2: "Serum 2", vital: "Vital", diva: "Diva"};
+const EXT = {serum2: "SERUM", vital: "VITAL", diva: "H2P"};
+const LEN = 10.5;
+const PLAY = s => `<svg width="${s}" height="${s}" viewBox="0 0 14 14"><path d="M3.5 1.8v10.4l9-5.2z"/></svg>`;
+const TRASH = '<svg width="16" height="16" viewBox="0 0 16 16"><path d="M6 1.5h4l.5 1H14V4H2V2.5h3.5zM3.2 5h9.6l-.7 9.1c-.05.8-.7 1.4-1.5 1.4H5.4c-.8 0-1.45-.6-1.5-1.4zm2.6 1.6.3 7.2h1.3L7.1 6.6zm3.1 0-.3 7.2h1.3l.3-7.2z"/></svg>';
+const PAUSE = s => `<svg width="${s}" height="${s}" viewBox="0 0 14 14"><path d="M3 2h2.8v10H3zM8.2 2H11v10H8.2z"/></svg>`;
+
+let synth = "serum2", items = [], sel = null, es = null, raf = 0, playing = null, view = "think", pinned = false;
+const live = {on: false, text: "", req: "", synth: "", phase: "", stat: ""};
+const audio = new Audio();
+const savedVol = parseFloat(localStorage.getItem("vol"));
+audio.volume = isFinite(savedVol) ? savedVol : 0.4;
+const SPK = on => `<svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 6h3l4-3.5v11L5 10H2z"/>${on ? '<path d="M11 5.2a4 4 0 0 1 0 5.6l-.9-.9a2.7 2.7 0 0 0 0-3.8zM12.8 3.4a6.5 6.5 0 0 1 0 9.2l-.9-.9a5.2 5.2 0 0 0 0-7.4z"/>' : '<path d="M10.6 5.6l1 -1 1.4 1.4 1.4-1.4 1 1-1.4 1.4 1.4 1.4-1 1-1.4-1.4-1.4 1.4-1-1L12 7z"/>'}</svg>`;
+function drawVol() {
+  if (!$("vol")) return;
+  const off = audio.muted || audio.volume === 0;
+  $("vol").value = audio.muted ? 0 : audio.volume;
+  $("mute").innerHTML = SPK(!off);
+  $("mute").title = off ? "Unmute" : "Mute";
+}
+function setupVol() {
+  if (!$("vol")) return;
+  $("vol").oninput = e => { audio.muted = false; audio.volume = +e.target.value; localStorage.setItem("vol", audio.volume); drawVol(); };
+  $("mute").onclick = () => { if (audio.volume === 0) { audio.volume = 0.4; audio.muted = false; } else audio.muted = !audio.muted; drawVol(); };
+  drawVol();
+}
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+const fileUrl = (dir, name) => "/file?p=" + encodeURIComponent(dir + "/" + name);
+const fmt = s => isFinite(s) ? Math.floor(s / 60) + ":" + String(Math.floor(s % 60)).padStart(2, "0") : "0:00";
+const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+const title = m => {
+  const n = m.result && m.result.name;
+  if (n && !/^[\s_\-]*$/.test(n)) return n.replace(/_/g, " ");
+  return cap(m.request.trim()) || "Untitled";
+};
+const split = t => {
+  t = t.replace(/\r\n?/g, "\n");
+  const i = t.indexOf("</think>");
+  return {think: (i < 0 ? t : t.slice(0, i)).replace(/^\s*<think>/, "").trim(), idc: i < 0 ? null : t.slice(i + 8).replace(/^\s+/, "")};
+};
+
+function hl(src) {
+  return src.split("\n").map(l => {
+    const e = esc(l);
+    if (/^\s*(\/\/|#)/.test(l)) return `<span class="c">${e}</span>`;
+    if (/^@/.test(l)) return `<span class="m">${e}</span>`;
+    return e.replace(/\b([a-z_][\w]*):/gi, '<span class="kk">$1</span>:').replace(/^([A-Za-z_]\w*)(?=\s|\{|$)/, '<span class="k">$1</span>');
+  }).join("\n");
+}
+
+function setSynth(s) {
+  synth = s;
+  document.querySelectorAll("#synths button").forEach(b => b.classList.toggle("on", b.dataset.s === s));
+}
+document.querySelectorAll("#synths button").forEach(b => b.onclick = () => setSynth(b.dataset.s));
+
+function renderLib() {
+  const box = $("lib");
+  let h = "";
+  if (live.on) h += `<div class="row${sel === "live" ? " sel" : ""}" data-dir="live"><span class="spin"></span><div class="rt"><div class="rn">Generating</div><div class="rq">${esc(live.req)}</div></div><span class="rs">${NAMES[live.synth]}</span></div>`;
+  for (const m of items) {
+    const wav = m.result && m.result.wav;
+    h += `<div class="row${sel === m.dir ? " sel" : ""}${playing === m.dir && !audio.paused ? " playing" : ""}" data-dir="${esc(m.dir)}">
+      <button class="rp${wav ? "" : " off"}" data-play="${esc(m.dir)}">${playing === m.dir && !audio.paused ? PAUSE(12) : PLAY(12)}</button>
+      <div class="rt"><div class="rn">${esc(title(m))}</div>${title(m) === cap(m.request.trim()) ? "" : `<div class="rq">${esc(m.request)}</div>`}</div>
+      <span class="rs">${NAMES[m.synth] || m.synth}</span></div>`;
+  }
+  box.innerHTML = h || '<div class="libempty">Your presets will be listed here.</div>';
+  $("count").textContent = items.length || "";
+  box.querySelectorAll(".row").forEach(r => r.onclick = () => select(r.dataset.dir, false));
+  box.querySelectorAll("[data-play]").forEach(b => b.onclick = e => {
+    e.stopPropagation();
+    const d = b.dataset.play;
+    if (playing === d && !audio.paused) audio.pause();
+    else if (playing === d && loaded.dir === d) audio.play();
+    else select(d, true);
+  });
+}
+
+async function loadLib(first) {
+  items = await (await fetch("/history")).json();
+  renderLib();
+  if (first) empty();
+}
+
+function select(dir, auto, keep) {
+  if (dir !== sel && !keep) view = "think";
+  sel = dir;
+  renderLib();
+  if (dir === "live") return showLive(true);
+  const m = items.find(x => x.dir === dir);
+  if (m) showEntry(m, auto);
+}
+
+function colsHtml() {
+  return `<div class="cols"><div class="ch"><div class="sw" id="sw"><button data-v="think">Reasoning</button><button data-v="idc">Preset text</button></div></div><div id="pane"></div></div>`;
+}
+
+function wireSwitch(getText, streaming) {
+  $("sw").querySelectorAll("button").forEach(b => b.onclick = () => {
+    view = b.dataset.v;
+    if (streaming()) pinned = true;
+    fillBody(getText(), streaming());
+  });
+}
+
+function fillBody(text, streaming) {
+  const s = split(text), p = $("pane");
+  if (!p) return;
+  $("sw").querySelectorAll("button").forEach(b => b.classList.toggle("on", b.dataset.v === view));
+  const changed = p.dataset.v !== view, stick = p.scrollHeight - p.scrollTop - p.clientHeight < 40;
+  p.innerHTML = view === "think"
+    ? (s.think ? `<div class="prose">${esc(s.think)}</div>` : `<div class="wait">${streaming ? "Starting." : "No reasoning in this answer."}</div>`)
+    : (s.idc != null ? `<pre class="idc">${hl(s.idc)}</pre>` : `<div class="wait">${streaming ? "Written after the reasoning." : "This answer has no preset text."}</div>`);
+  p.dataset.v = view;
+  if (changed) p.scrollTop = streaming ? p.scrollHeight : 0;
+  else if (streaming && stick) p.scrollTop = p.scrollHeight;
+}
+
+async function showEntry(m, auto) {
+  const r = m.result || {};
+  let h = `<div class="wrap"><div class="head"><div><div class="kicker">${NAMES[m.synth] || m.synth}</div><h1>${esc(title(m))}</h1><p class="ask">${esc(m.request)}</p>`;
+  if (m.seconds) h += `<div class="stats">Written in ${Math.round(m.seconds)} s · ${m.tokens.toLocaleString("en-US")} tokens · ${(m.tokens / m.seconds).toFixed(1)} tok/s</div>`;
+  if (r.peak_db != null && r.peak_db < -24) h += `<div class="msg warn">This one is quiet: its preview peaks at ${r.peak_db} dB.</div>`;
+  if (m.error) h += `<div class="msg bad">The preset could not be built from this answer: ${esc(m.error)}</div>`;
+  else if (!m.result) h += `<div class="msg bad">The answer has no preset in it.</div>`;
+  if (!m.ended) h += `<div class="msg warn">The answer was cut off before it finished.</div>`;
+  const notes = (r.notes || []).filter(n => !/all clean/i.test(n));
+  if (notes.length) h += `<details class="conv"><summary>Some settings were approximated or left out. Details</summary><pre>${notes.map(esc).join("\n")}</pre></details>`;
+  h += `</div><div>`;
+  h += `<div class="file">${r.wav ? `<button class="play" id="pp">${PLAY(16)}</button>` : `<div class="ficon">${r.preset ? EXT[m.synth] || "" : "—"}</div>`}<div class="fx"><div class="fname">${r.preset ? esc(r.preset) : "No preset file"}</div>`;
+  if (r.wav) h += `<div class="prog"><div class="track" id="track"><div><span id="fill"></span></div></div><span class="time" id="tm">0:00 / ${fmt(LEN)}</span></div>`;
+  else if (r.preset) h += `<div class="fsub">No preview: the ${NAMES[m.synth]} plugin is not set up, or the render failed.</div>`;
+  h += `</div>`;
+  if (r.wav) h += `<div class="vol"><button id="mute" title="Mute"></button><input type="range" id="vol" min="0" max="1" step="0.01"></div>`;
+  if (r.preset) h += `<button class="btn" id="reveal">Show in folder</button>`;
+  h += `<button class="btn icon" id="del" title="Delete">${TRASH}</button></div>`;
+  h += `</div></div>` + colsHtml() + `</div>`;
+  $("detail").innerHTML = h;
+  if (r.preset) $("reveal").onclick = () => fetch("/reveal?p=" + encodeURIComponent(m.dir + "/" + r.preset));
+  $("del").onclick = () => remove(m.dir, $("del"));
+  let text = "";
+  wireSwitch(() => text, () => false);
+  if (r.wav) setupPlayer(m.dir, fileUrl(m.dir, r.wav), auto);
+  const t = await (await fetch(fileUrl(m.dir, "answer.txt"))).text();
+  if (sel !== m.dir) return;
+  text = t;
+  fillBody(t, false);
+}
+
+function showLive(full) {
+  const phaseTitle = {start: "Starting", think: "Thinking", write: "Writing the preset", render: "Rendering the preview"}[live.phase] || "Working";
+  if (full || !$("livetitle")) {
+    $("detail").innerHTML = `<div class="wrap"><div class="head"><div><div class="kicker">${NAMES[live.synth]}</div><h1 id="livetitle"></h1><p class="ask">${esc(live.req)}</p><div class="stats" id="livestat"></div></div><div class="livebox"><div class="bar"></div><button class="btn small" id="stopb">Stop</button></div></div>${colsHtml()}</div>`;
+    $("stopb").onclick = () => fetch("/stop");
+    wireSwitch(() => live.text, () => true);
+  }
+  if (!pinned) view = live.phase === "write" || live.phase === "render" ? "idc" : "think";
+  $("livetitle").textContent = phaseTitle;
+  $("livestat").textContent = live.stat || "Starting";
+  fillBody(live.text, true);
+}
+
+function drawProg() {
+  const mine = playing === sel;
+  const dur = mine && audio.duration ? audio.duration : LEN;
+  if ($("fill")) $("fill").style.width = (mine && audio.duration ? audio.currentTime / audio.duration * 100 : 0) + "%";
+  if ($("tm")) $("tm").textContent = fmt(mine ? audio.currentTime : 0) + " / " + fmt(dur);
+  if ($("pp")) $("pp").innerHTML = mine && !audio.paused ? PAUSE(16) : PLAY(16);
+}
+
+function tick() { drawProg(); if (!audio.paused) requestAnimationFrame(tick); }
+audio.onplay = () => { renderLib(); tick(); };
+audio.onpause = audio.onended = () => { renderLib(); drawProg(); };
+audio.onloadedmetadata = drawProg;
+addEventListener("resize", drawProg);
+
+let loaded = {dir: null, p: null};
+function loadAudio(dir, src) {
+  if (loaded.dir === dir) return loaded.p;
+  audio.pause();
+  playing = dir;
+  const p = (async () => {
+    const blob = await (await fetch(src)).blob();
+    if (loaded.dir !== dir) return;
+    const old = audio.src;
+    const ready = new Promise(r => audio.addEventListener("loadedmetadata", r, {once: true}));
+    audio.src = URL.createObjectURL(blob);
+    if (old.startsWith("blob:")) URL.revokeObjectURL(old);
+    await ready;
+  })();
+  loaded = {dir, p};
+  return p;
+}
+
+function setupPlayer(dir, src, auto) {
+  const start = async t => {
+    await loadAudio(dir, src);
+    if (playing !== dir) return;
+    if (t != null) audio.currentTime = t;
+    audio.play().catch(() => {});
+  };
+  $("pp").onclick = () => (playing === dir && !audio.paused) ? audio.pause() : start(null);
+  const tr = $("track");
+  const at = e => { const b = tr.getBoundingClientRect(); return Math.min(1, Math.max(0, (e.clientX - b.left) / b.width)); };
+  tr.onpointerdown = async e => {
+    tr.setPointerCapture(e.pointerId);
+    tr.classList.add("drag");
+    let f = at(e);
+    tr.onpointermove = ev => { f = at(ev); if (playing === dir && audio.duration) { audio.currentTime = f * audio.duration; drawProg(); } };
+    await loadAudio(dir, src);
+    if (playing !== dir) return;
+    audio.currentTime = f * audio.duration;
+    if (audio.paused) audio.play().catch(() => {});
+    drawProg();
+  };
+  tr.onpointerup = tr.onpointercancel = () => { tr.onpointermove = null; tr.classList.remove("drag"); };
+  setupVol();
+  if (auto) start(0);
+  drawProg();
+}
+
+async function remove(dir, b) {
+  if (!b.classList.contains("arm")) {
+    b.classList.add("arm");
+    b.textContent = "Delete?";
+    setTimeout(() => { if (b.isConnected) { b.classList.remove("arm"); b.innerHTML = TRASH; } }, 3000);
+    return;
+  }
+  const res = await (await fetch("/delete?d=" + encodeURIComponent(dir))).json().catch(() => ({}));
+  if (!res.ok) { b.textContent = "Could not delete"; return; }
+  if (playing === dir) { audio.pause(); playing = null; loaded = {dir: null, p: null}; }
+  const i = items.findIndex(x => x.dir === dir);
+  if (i >= 0) items.splice(i, 1);
+  const next = items[Math.min(Math.max(i, 0), items.length - 1)];
+  if (next) select(next.dir, false);
+  else { sel = null; renderLib(); empty(); }
+}
+
+function empty() {
+  $("detail").innerHTML = `<div class="empty"><div><h2>Describe a sound</h2><p>Pick a synth, say what you want to hear, and press Generate. The preset is written, rendered and saved, ready to play here and open in your synth.</p></div></div>`;
+}
+
+async function status() {
+  const s = await (await fetch("/status")).json();
+  const ready = s.load.startsWith("ready"), failed = /^(no |load failed)/.test(s.load);
+  $("mdot").className = "dot " + (ready ? "ok" : failed ? "bad" : "wait");
+  $("mtext").textContent = ready ? "Model ready" : failed ? "Model not loaded" : "Loading model";
+  $("mtext").parentElement.title = s.load;
+  $("loaderr").hidden = !failed;
+  $("loaderr").textContent = s.load;
+  $("go").disabled = !ready || !!es || s.busy;
+  if (!ready && !failed) setTimeout(status, 1500);
+}
+
+function lock(on) {
+  $("go").disabled = on;
+  $("go").textContent = on ? "Generating" : "Generate preset";
+  document.querySelectorAll("#synths button").forEach(b => b.disabled = on);
+}
+
+const schedLive = () => { if (!raf) raf = requestAnimationFrame(() => { raf = 0; if (sel === "live") showLive(false); }); };
+
+function go() {
+  const req = $("req").value.trim();
+  if (!req || $("go").disabled) return;
+  Object.assign(live, {on: true, text: "", req, synth, phase: "start", stat: ""});
+  audio.pause();
+  playing = null;
+  loaded = {dir: null, p: null};
+  lock(true);
+  sel = "live";
+  pinned = false;
+  view = "think";
+  renderLib();
+  showLive(true);
+  const t0 = Date.now();
+  let t1 = 0;
+  es = new EventSource("/gen?" + new URLSearchParams({synth, request: req, temperature: $("temp").value, top_k: $("topk").value}));
+  es.onmessage = e => {
+    const m = JSON.parse(e.data);
+    if (m.t !== undefined) {
+      live.text += m.t;
+      if (!t1) t1 = Date.now();
+      const s = (Date.now() - t1) / 1000, wrote = live.text.includes("</think>");
+      live.phase = wrote ? "write" : "think";
+      live.stat = `${Math.round((Date.now() - t0) / 1000)} s · ${m.n.toLocaleString("en-US")} tokens · ${s > 1 ? (m.n / s).toFixed(1) : "-"} tok/s`;
+      schedLive();
+    } else if (m.converting) { live.phase = "render"; schedLive(); }
+    else if (m.error) { finish(null, m.error); }
+    else if (m.done) { finish(m.done); }
+  };
+  es.onerror = () => finish(null, "The connection to the server was lost.");
+}
+
+async function finish(done, err) {
+  if (es) { es.close(); es = null; }
+  live.on = false;
+  lock(false);
+  await loadLib();
+  if (done) { if (sel === "live") select(done.dir, true, true); }
+  else if (sel === "live") {
+    $("detail").innerHTML = `<div class="wrap"><div class="head"><div><div class="kicker">${NAMES[live.synth]}</div><h1>Generation failed</h1><p class="ask">${esc(live.req)}</p><div class="msg bad">${esc(err || "")}</div></div><div></div></div></div>`;
+  }
+  status();
+}
+
+$("go").onclick = go;
+$("req").onkeydown = e => { if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); go(); } };
+status();
+loadLib(true);
+$("req").focus();
+</script>
+</body>
+</html>

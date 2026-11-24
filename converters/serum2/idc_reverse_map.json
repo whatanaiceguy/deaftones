@@ -1,0 +1,2443 @@
+{
+ "_generated_from": "the Serum 2 converter's corpus run; table, noise and impulse paths cut to Serum 2's factory content",
+ "_presets": 5997,
+ "param": {
+  "Env": {
+   "attack": "kParamAttack",
+   "beat_sync": "kParamBeatSync",
+   "curve1": "kParamCurve1",
+   "curve2": "kParamCurve2",
+   "curve3": "kParamCurve3",
+   "decay": "kParamDecay",
+   "hold": "kParamHold",
+   "release": "kParamRelease",
+   "sustain": "kParamSustain",
+   "voice_steal_restart": "kParamVoiceStealRestart"
+  },
+  "FXBode": {
+   "beat_sync": "kParamBeatSync",
+   "blur": "kParamBlur",
+   "delay_balance": "kParamDelayBalance",
+   "delay_time": "kParamDelayTime",
+   "feedback": "kParamFeedback",
+   "mono_input": "kParamMonoInput",
+   "output_mix": "kParamOutputMix",
+   "output_width": "kParamOutputWidth",
+   "range": "kParamRange",
+   "shift": "kParamShift",
+   "wet": "kParamWet"
+  },
+  "FXChorus": {
+   "beat_sync": "kParamBeatSync",
+   "delay": "kParamDelay",
+   "delay2": "kParamDelay2",
+   "depth": "kParamDepth",
+   "enable": "kParamEnable",
+   "feedback": "kParamFeedback",
+   "filt": "kParamFilt",
+   "filt_mode": "kParamFiltMode",
+   "rate": "kParamRate",
+   "wet": "kParamWet"
+  },
+  "FXComp": {
+   "attack": "kParamAttack",
+   "enable": "kParamEnable",
+   "gain0": "kParamGain0",
+   "gain1": "kParamGain1",
+   "gain2": "kParamGain2",
+   "level_out": "kParamLevelOut",
+   "makeup": "kParamMakeup",
+   "multiband": "kParamMultiband",
+   "ratio": "kParamRatio",
+   "ratio_below": "kParamRatioBelow",
+   "release": "kParamRelease",
+   "thresh": "kParamThresh",
+   "thresh_ud0": "kParamThreshUD0",
+   "thresh_ud1": "kParamThreshUD1",
+   "thresh_ud2": "kParamThreshUD2",
+   "wet": "kParamWet",
+   "wet_dry_comp": "kParamCompensatedWetDry",
+   "xover_hi": "kParamXoverHi",
+   "xover_low": "kParamXoverLow"
+  },
+  "FXConv": {
+   "attack": "kParamAttack",
+   "damping": "kParamDamping",
+   "decay": "kParamDecay",
+   "ip_trim": "kParamIpTrim",
+   "level_out": "kParamLevelOut",
+   "min_phase": "kParamMinPhase",
+   "predelay": "kParamPredelay",
+   "predelay_beat_sync": "kParamPredelayBeatSync",
+   "size": "kParamSize",
+   "tone": "kParamTone",
+   "wet": "kParamWet"
+  },
+  "FXDelay": {
+   "beat_sync": "kParamBeatSync",
+   "bw": "kParamBW",
+   "enable": "kParamEnable",
+   "feedback": "kParamFeedback",
+   "freq": "kParamFreq",
+   "level_out": "kParamLevelOut",
+   "link": "kParamLink",
+   "mode": "kParamMode",
+   "offset_l": "kParamOffsetL",
+   "offset_r": "kParamOffsetR",
+   "time_l": "kParamTimeL",
+   "time_r": "kParamTimeR",
+   "wet": "kParamWet"
+  },
+  "FXDistortion": {
+   "bw": "kParamBW",
+   "drive": "kParamDrive",
+   "enable": "kParamEnable",
+   "freq": "kParamFreq",
+   "level_out": "kParamLevelOut",
+   "lphp": "kParamLPHP",
+   "mode": "kParamMode",
+   "pre_post": "kParamPrePost",
+   "wet": "kParamWet"
+  },
+  "FXEQ": {
+   "enable": "kParamEnable",
+   "freq1": "kParamFreq1",
+   "freq2": "kParamFreq2",
+   "gain1": "kParamGain1",
+   "gain2": "kParamGain2",
+   "reso1": "kParamReso1",
+   "reso2": "kParamReso2",
+   "type1": "kParamType1",
+   "type2": "kParamType2"
+  },
+  "FXFilter": {
+   "drive": "kParamDrive",
+   "enable": "kParamEnable",
+   "freq": "kParamFreq",
+   "level_out": "kParamLevelOut",
+   "reso": "kParamReso",
+   "stereo": "kParamStereo",
+   "type": "kParamType",
+   "var": "kParamVar",
+   "wet": "kParamWet"
+  },
+  "FXFlanger": {
+   "beat_sync": "kParamBeatSync",
+   "depth": "kParamDepth",
+   "enable": "kParamEnable",
+   "feedback": "kParamFeedback",
+   "level_out": "kParamLevelOut",
+   "rate": "kParamRate",
+   "wet": "kParamWet",
+   "width": "kParamWidth"
+  },
+  "FXHyperD": {
+   "detune": "kParamDetune",
+   "dim_e_level_out": "kParamDimELevelOut",
+   "dim_e_size": "kParamDimESize",
+   "dim_e_wet": "kParamDimEWet",
+   "enable": "kParamEnable",
+   "rate": "kParamRate",
+   "retrig": "kParamRetrig",
+   "unison": "kParamUnison",
+   "wet": "kParamWet"
+  },
+  "FXPhaser": {
+   "beat_sync": "kParamBeatSync",
+   "depth": "kParamDepth",
+   "depth2": "kParamDepth2",
+   "enable": "kParamEnable",
+   "feedback": "kParamFeedback",
+   "freq": "kParamFreq",
+   "num_poles": "kParamNumPoles",
+   "rate": "kParamRate",
+   "wet": "kParamWet",
+   "width": "kParamWidth"
+  },
+  "FXReverb": {
+   "delay": "kParamDelay",
+   "enable": "kParamEnable",
+   "feedback": "kParamFeedback",
+   "freq": "kParamFreq",
+   "freq_b": "kParamFreqB",
+   "freq_c": "kParamFreqC",
+   "level_out": "kParamLevelOut",
+   "mode": "kParamMode",
+   "pre_delay": "kParamPreDelay",
+   "size": "kParamSize",
+   "type": "kParamType",
+   "wet": "kParamWet",
+   "width": "kParamWidth"
+  },
+  "FXSplit": {
+   "freq": "kParamFreq",
+   "freq2": "kParamFreq2"
+  },
+  "FXUtils": {
+   "balance": "kParamBalance",
+   "hpf": "kParamHPF",
+   "lf_xover": "kParamLFXover",
+   "lpf": "kParamLPF",
+   "polarity_r": "kParamPolarityR",
+   "wet": "kParamWet",
+   "width": "kParamWidth"
+  },
+  "Global": {
+   "bend_range_dn": "kParamBendRangeDn",
+   "bend_range_up": "kParamBendRangeUp",
+   "fx_bus1_vol": "kParamFXBus1Vol",
+   "fx_bus2_vol": "kParamFXBus2Vol",
+   "global_tuning": "kParamGlobalTuning",
+   "legato": "kParamLegato",
+   "limit_same_note": "kParamLimitSameNotePolyphony",
+   "master_tuning": "kParamMasterTuning",
+   "mod_wheel": "kParamModWheel",
+   "mono_toggle": "kParamMonoToggle",
+   "oversampling": "kParamOversampling",
+   "poly": "kParamPolyCount",
+   "porta_always": "kParamPortaAlways",
+   "porta_scaled": "kParamPortaScaled",
+   "portamento_curve": "kParamPortamentoCurve",
+   "portamento_time": "kParamPortamentoTime",
+   "s1_compat": "kParamS1Compatibility",
+   "voice_amp": "kParamVoiceAmp",
+   "volume": "kParamMasterVolume"
+  },
+  "LFO": {
+   "anchored": "kParamAnchored",
+   "beat_sync": "kParamBeatSync",
+   "default_mode": "kParamDefaultMode",
+   "delay": "kParamDelay",
+   "dotted": "kParamDotted",
+   "mode": "kParamMode",
+   "mono": "kParamMono",
+   "phase": "kParamPhase",
+   "rate": "kParamRate",
+   "rate10x": "kParamRate10x",
+   "rise": "kParamRise",
+   "smooth": "kParamSmooth",
+   "triplets": "kParamTriplets",
+   "type": "kParamType"
+  },
+  "Macro": {
+   "value": "kParamValue"
+  },
+  "MidiClip": {
+   "launch_retrig": "kParamLaunchRetrig"
+  },
+  "ModSlot": {
+   "amount": "kParamAmount",
+   "aux_curve": "kParamAuxCurve",
+   "aux_inverted": "kParamAuxInverted",
+   "bipolar": "kParamBipolar",
+   "bypass": "kParamBypass",
+   "curve_in": "kParamCurveIn",
+   "out": "kParamOut"
+  },
+  "NoiseOsc": {
+   "color": "kParamColor",
+   "fine": "kParamFine",
+   "initial_phase": "kParamInitialPhase",
+   "noise_type": "kParamNoiseType",
+   "one_shot": "kParamOneShot",
+   "random_phase": "kParamRandomPhase"
+  },
+  "Oscillator": {
+   "coarse_pit": "kParamCoarsePit",
+   "detune": "kParamDetune",
+   "detune_mode": "kParamDetuneMode",
+   "detune_width": "kParamDetuneWid",
+   "enable": "kParamEnable",
+   "fine": "kParamFine",
+   "loop_start": "kParamLoopStart",
+   "octave": "kParamOctave",
+   "pan": "kParamPan",
+   "pitch": "kParamPitch",
+   "pitch_track": "kParamPitchTrack",
+   "type": "kParamType",
+   "unison": "kParamUnison",
+   "unison_range": "kParamUnisonRange",
+   "unison_stack": "kParamUnisonStack",
+   "unison_stereo": "kParamUnisonStereo",
+   "unison_warp": "kParamUnisonWarp",
+   "volume": "kParamVolume"
+  },
+  "RoutingSlot": {
+   "fx_bus1_level": "kParamFXBus1Level",
+   "fx_bus2_level": "kParamFXBus2Level",
+   "routing_dest": "kParamRoutingDest",
+   "via_env1": "kParamViaEnv1"
+  },
+  "SubOsc": {
+   "contiguous_phase": "kParamContiguousPhase",
+   "shape": "kParamShape"
+  },
+  "VoiceFilter": {
+   "drive": "kParamDrive",
+   "enable": "kParamEnable",
+   "freq": "kParamFreq",
+   "key_track": "kParamKeyTrack",
+   "level_out": "kParamLevelOut",
+   "reso": "kParamReso",
+   "stereo": "kParamStereo",
+   "type": "kParamType",
+   "var": "kParamVar",
+   "wet": "kParamWet"
+  },
+  "WTOsc": {
+   "initial_phase": "kParamInitialPhase",
+   "phase_memory": "kParamPhaseMemory",
+   "random_phase": "kParamRandomPhase",
+   "table_pos": "kParamTablePos",
+   "unison_wt_pos": "kParamUnisonWTPos",
+   "warp": "kParamWarpMenu",
+   "warp_amt": "kParamWarp",
+   "warp_var": "kParamWarpVar"
+  }
+ },
+ "enum": {
+  "FXDistortion.kParamMode": {
+   "asym": "kAsym",
+   "diode1": "kDiode1",
+   "diode2": "kDiode2",
+   "downsample": "kDownsample",
+   "hard_clip": "kHardClip",
+   "lin_fold": "kLinFold",
+   "rectify": "kRectify",
+   "sin_fold": "kSinFold",
+   "sine_shaper": "kSineShaper",
+   "soft_clip": "kSoftClip",
+   "stomp_box": "kStompBox",
+   "tape_sat": "kTapeSat",
+   "x_shaper": "kXShaper",
+   "x_shaper_asym": "kXShaperAsym",
+   "zero_square": "kZeroSquare"
+  },
+  "FXFilter.kParamType": {
+   "add_bass": "ADD_BASS",
+   "allpasses": "Allpasses",
+   "b12": "B12",
+   "b24": "B24",
+   "band_reject": "BandReject",
+   "beq12": "BEQ12",
+   "bn12": "BN12",
+   "bp12": "BP12",
+   "bpn24": "BPN24",
+   "comb_h6_n": "CombH6N",
+   "comb_h6_p": "CombH6P",
+   "comb_hl6_n": "CombHL6N",
+   "comb_hl6_p": "CombHL6P",
+   "comb_l6_n": "CombL6N",
+   "comb_l6_p": "CombL6P",
+   "comb_n": "CombN",
+   "comb_p": "CombP",
+   "combs": "Combs",
+   "dist_comb1_lp": "DistComb1LP",
+   "dist_comb2_bp": "DistComb2BP",
+   "dist_comb2_lp": "DistComb2LP",
+   "flange_h6_n": "FlangeH6N",
+   "flange_h6_p": "FlangeH6P",
+   "flange_hl6_n": "FlangeHL6N",
+   "flange_hl6_p": "FlangeHL6P",
+   "flange_l6_n": "FlangeL6N",
+   "flange_l6_p": "FlangeL6P",
+   "flange_n": "FlangeN",
+   "flange_p": "FlangeP",
+   "flange_phase12_hl6_n": "FlangePhase12HL6N",
+   "flange_phase12_hl6_p": "FlangePhase12HL6P",
+   "formant_one": "FormantONE",
+   "formant_twb": "FormantTWB",
+   "formant_two": "FormantTWO",
+   "h12": "H12",
+   "h18": "H18",
+   "h24": "H24",
+   "h6": "H6",
+   "hb12": "HB12",
+   "heq12": "HEQ12",
+   "heq6": "HEQ6",
+   "hn12": "HN12",
+   "hp12": "HP12",
+   "l12": "L12",
+   "l18": "L18",
+   "l24": "L24",
+   "l6": "L6",
+   "lb12": "LB12",
+   "lbh12": "LBH12",
+   "lbh24": "LBH24",
+   "leq12": "LEQ12",
+   "lh12": "LH12",
+   "lh6": "LH6",
+   "ln12": "LN12",
+   "lnh12": "LNH12",
+   "lnh24": "LNH24",
+   "lp12": "LP12",
+   "lph12": "LPH12",
+   "mg_l12": "MgL12",
+   "mg_l18": "MgL18",
+   "mg_l24": "MgL24",
+   "n12": "N12",
+   "n24": "N24",
+   "nn12": "NN12",
+   "p12": "P12",
+   "p24": "P24",
+   "phase12_n": "Phase12N",
+   "phase12_p": "Phase12P",
+   "phase24_n": "Phase24N",
+   "phase24_p": "Phase24P",
+   "phase36_n": "Phase36N",
+   "phase36_p": "Phase36P",
+   "phase48_h6_p": "Phase48H6P",
+   "phase48_hl6_n": "Phase48HL6N",
+   "phase48_hl6_p": "Phase48HL6P",
+   "phase48_l6_n": "Phase48L6N",
+   "phase48_l6_p": "Phase48L6P",
+   "phase48_n": "Phase48N",
+   "phase48_p": "Phase48P",
+   "pn12": "PN12",
+   "pp12": "PP12",
+   "reverb1": "Reverb1",
+   "rm": "RM",
+   "rmt": "RMT",
+   "scream": "Scream",
+   "scream3_bp": "Scream3BP",
+   "scream3_lp": "Scream3LP",
+   "snh1": "SNH1",
+   "snh2": "SNH2",
+   "zdf_a": "ZDF_A"
+  },
+  "FXReverb.kParamType": {
+   "abyss": "kAbyss",
+   "hall": "kHall"
+  },
+  "LFO.kParamMode": {
+   "envelope": "Envelope",
+   "free": "Free"
+  },
+  "LFO.kParamType": {
+   "lorenz": "Lorenz",
+   "random_sh": "RandomSH",
+   "rossler": "Rossler"
+  },
+  "NoiseOsc.kParamNoiseType": {
+   "white": "White"
+  },
+  "Oscillator.kParamDetuneMode": {
+   "detune_exp": "kDetuneExp",
+   "detune_inv": "kDetuneInv",
+   "detune_random": "kDetuneRandom",
+   "detune_super": "kDetuneSuper"
+  },
+  "Oscillator.kParamType": {
+   "osc_sample": "kOsc_Sample"
+  },
+  "Oscillator.kParamUnisonStack": {
+   "center12": "kCenter12",
+   "center24": "kCenter24",
+   "octave1": "kOctave1",
+   "octave2": "kOctave2",
+   "octave3": "kOctave3",
+   "octave_fifth1": "kOctaveFifth1",
+   "octave_fifth2": "kOctaveFifth2",
+   "octave_fifth3": "kOctaveFifth3"
+  },
+  "RoutingSlot.kParamRoutingDest": {
+   "direct": "kRoutingDestDirect",
+   "filter": "kRoutingDestFilter",
+   "master": "kRoutingDestMaster",
+   "none": "kRoutingDestNone"
+  },
+  "SubOsc.kParamShape": {
+   "pulse": "kPulse",
+   "round_rect": "kRoundRect",
+   "saw": "kSaw",
+   "square": "kSquare",
+   "triangle": "kTriangle"
+  },
+  "VoiceFilter.kParamType": {
+   "add_bass": "ADD_BASS",
+   "allpasses": "Allpasses",
+   "b12": "B12",
+   "b24": "B24",
+   "band_reject": "BandReject",
+   "beq12": "BEQ12",
+   "bn12": "BN12",
+   "bp12": "BP12",
+   "bpn12": "BPN12",
+   "bpn24": "BPN24",
+   "comb_h6_n": "CombH6N",
+   "comb_h6_p": "CombH6P",
+   "comb_hl6_n": "CombHL6N",
+   "comb_hl6_p": "CombHL6P",
+   "comb_l6_n": "CombL6N",
+   "comb_l6_p": "CombL6P",
+   "comb_n": "CombN",
+   "comb_p": "CombP",
+   "combs": "Combs",
+   "dist_comb1_bp": "DistComb1BP",
+   "dist_comb1_lp": "DistComb1LP",
+   "dist_comb2_bp": "DistComb2BP",
+   "dist_comb2_lp": "DistComb2LP",
+   "flange_h6_n": "FlangeH6N",
+   "flange_h6_p": "FlangeH6P",
+   "flange_hl6_n": "FlangeHL6N",
+   "flange_hl6_p": "FlangeHL6P",
+   "flange_l6_n": "FlangeL6N",
+   "flange_l6_p": "FlangeL6P",
+   "flange_n": "FlangeN",
+   "flange_p": "FlangeP",
+   "flange_phase12_hl6_n": "FlangePhase12HL6N",
+   "flange_phase12_hl6_p": "FlangePhase12HL6P",
+   "formant_one": "FormantONE",
+   "formant_twb": "FormantTWB",
+   "formant_two": "FormantTWO",
+   "h12": "H12",
+   "h18": "H18",
+   "h24": "H24",
+   "h6": "H6",
+   "hb12": "HB12",
+   "heq12": "HEQ12",
+   "heq6": "HEQ6",
+   "hn12": "HN12",
+   "hp12": "HP12",
+   "l12": "L12",
+   "l18": "L18",
+   "l24": "L24",
+   "l6": "L6",
+   "lb12": "LB12",
+   "lbh12": "LBH12",
+   "lbh24": "LBH24",
+   "leq12": "LEQ12",
+   "leq6": "LEQ6",
+   "lh12": "LH12",
+   "lh6": "LH6",
+   "ln12": "LN12",
+   "lnh12": "LNH12",
+   "lnh24": "LNH24",
+   "lp12": "LP12",
+   "lph12": "LPH12",
+   "lph24": "LPH24",
+   "mg_l18": "MgL18",
+   "mg_l24": "MgL24",
+   "mg_l6": "MgL6",
+   "n12": "N12",
+   "n24": "N24",
+   "nn12": "NN12",
+   "p12": "P12",
+   "p24": "P24",
+   "phase12_n": "Phase12N",
+   "phase12_p": "Phase12P",
+   "phase24_n": "Phase24N",
+   "phase24_p": "Phase24P",
+   "phase36_n": "Phase36N",
+   "phase36_p": "Phase36P",
+   "phase48_h6_n": "Phase48H6N",
+   "phase48_h6_p": "Phase48H6P",
+   "phase48_hl6_n": "Phase48HL6N",
+   "phase48_hl6_p": "Phase48HL6P",
+   "phase48_l6_n": "Phase48L6N",
+   "phase48_l6_p": "Phase48L6P",
+   "phase48_n": "Phase48N",
+   "phase48_p": "Phase48P",
+   "pn12": "PN12",
+   "pp12": "PP12",
+   "reverb1": "Reverb1",
+   "rm": "RM",
+   "rmt": "RMT",
+   "scream": "Scream",
+   "scream3_bp": "Scream3BP",
+   "scream3_lp": "Scream3LP",
+   "snh1": "SNH1",
+   "snh2": "SNH2",
+   "zdf_a": "ZDF_A"
+  },
+  "WTOsc.kParamPhaseMemory": {
+   "contiguous": "kContiguous"
+  },
+  "WTOsc.kParamWarpMenu": {
+   "am_osc": "kAM_OSC",
+   "asym_neg": "kASYMNeg",
+   "asym_pos": "kASYMPos",
+   "asym_pos_neg": "kASYMPosNeg",
+   "bend_neg": "kBendNeg",
+   "bend_pos": "kBendPos",
+   "bend_pos_neg": "kBendPosNeg",
+   "dlm": "kDLM",
+   "flip": "kFlip",
+   "fm_noise": "kFM_NOISE",
+   "fm_sub": "kFM_SUB",
+   "pd_osc": "kPD_OSC",
+   "pwm": "kPWM",
+   "quantize": "kQuantize",
+   "remap_1": "kRemap_1",
+   "remap_2": "kRemap_2",
+   "remap_3": "kRemap_3",
+   "remap_4": "kRemap_4",
+   "rm_osc": "kRM_OSC",
+   "sync": "kSync"
+  }
+ },
+ "dest": {
+  "attack": [
+   [
+    "Env",
+    0,
+    "kParamAttack"
+   ],
+   [
+    "FXComp",
+    4,
+    "kParamAttack"
+   ]
+  ],
+  "bw": [
+   [
+    "FXDelay",
+    3,
+    "kParamBW"
+   ],
+   [
+    "FXDistortion",
+    6,
+    "kParamBW"
+   ]
+  ],
+  "coarse_pit": [
+   [
+    "Oscillator",
+    6,
+    "kParamCoarsePit"
+   ]
+  ],
+  "color": [
+   [
+    "NoiseOsc",
+    0,
+    "kParamColor"
+   ]
+  ],
+  "decay": [
+   [
+    "Env",
+    2,
+    "kParamDecay"
+   ],
+   [
+    "FXConv",
+    6,
+    "kParamDecay"
+   ]
+  ],
+  "delay": [
+   [
+    "FXChorus",
+    4,
+    "kParamDelay"
+   ],
+   [
+    "FXReverb",
+    3,
+    "kParamDelay"
+   ]
+  ],
+  "delay2": [
+   [
+    "FXChorus",
+    5,
+    "kParamDelay2"
+   ]
+  ],
+  "depth": [
+   [
+    "FXChorus",
+    6,
+    "kParamDepth"
+   ],
+   [
+    "FXFlanger",
+    4,
+    "kParamDepth"
+   ],
+   [
+    "FXPhaser",
+    4,
+    "kParamDepth"
+   ]
+  ],
+  "detune": [
+   [
+    "FXHyperD",
+    3,
+    "kParamDetune"
+   ],
+   [
+    "Oscillator",
+    26,
+    "kParamDetune"
+   ]
+  ],
+  "detune_width": [
+   [
+    "Oscillator",
+    27,
+    "kParamDetuneWid"
+   ]
+  ],
+  "dim_e_size": [
+   [
+    "FXHyperD",
+    7,
+    "kParamDimESize"
+   ]
+  ],
+  "dim_e_wet": [
+   [
+    "FXHyperD",
+    8,
+    "kParamDimEWet"
+   ]
+  ],
+  "drive": [
+   [
+    "FXDistortion",
+    2,
+    "kParamDrive"
+   ],
+   [
+    "FXFilter",
+    5,
+    "kParamDrive"
+   ],
+   [
+    "VoiceFilter",
+    5,
+    "kParamDrive"
+   ]
+  ],
+  "feedback": [
+   [
+    "FXChorus",
+    7,
+    "kParamFeedback"
+   ],
+   [
+    "FXDelay",
+    9,
+    "kParamFeedback"
+   ],
+   [
+    "FXFlanger",
+    5,
+    "kParamFeedback"
+   ],
+   [
+    "FXPhaser",
+    7,
+    "kParamFeedback"
+   ],
+   [
+    "FXReverb",
+    5,
+    "kParamFeedback"
+   ]
+  ],
+  "filt": [
+   [
+    "FXChorus",
+    8,
+    "kParamFilt"
+   ]
+  ],
+  "fine": [
+   [
+    "NoiseOsc",
+    1,
+    "kParamFine"
+   ],
+   [
+    "Oscillator",
+    5,
+    "kParamFine"
+   ]
+  ],
+  "freq": [
+   [
+    "FXDelay",
+    2,
+    "kParamFreq"
+   ],
+   [
+    "FXDistortion",
+    5,
+    "kParamFreq"
+   ],
+   [
+    "FXFilter",
+    3,
+    "kParamFreq"
+   ],
+   [
+    "FXPhaser",
+    6,
+    "kParamFreq"
+   ],
+   [
+    "FXReverb",
+    4,
+    "kParamFreq"
+   ],
+   [
+    "VoiceFilter",
+    3,
+    "kParamFreq"
+   ]
+  ],
+  "freq1": [
+   [
+    "FXEQ",
+    1,
+    "kParamFreq1"
+   ]
+  ],
+  "freq2": [
+   [
+    "FXEQ",
+    2,
+    "kParamFreq2"
+   ]
+  ],
+  "freq_b": [
+   [
+    "FXReverb",
+    6,
+    "kParamFreqB"
+   ]
+  ],
+  "gain1": [
+   [
+    "FXEQ",
+    5,
+    "kParamGain1"
+   ]
+  ],
+  "gain2": [
+   [
+    "FXEQ",
+    6,
+    "kParamGain2"
+   ]
+  ],
+  "hold": [
+   [
+    "Env",
+    1,
+    "kParamHold"
+   ]
+  ],
+  "initial_phase": [
+   [
+    "NoiseOsc",
+    2,
+    "kParamInitialPhase"
+   ],
+   [
+    "WTOsc",
+    8,
+    "kParamInitialPhase"
+   ]
+  ],
+  "level_out": [
+   [
+    "FXComp",
+    11,
+    "kParamLevelOut"
+   ],
+   [
+    "FXDistortion",
+    8,
+    "kParamLevelOut"
+   ],
+   [
+    "FXReverb",
+    10,
+    "kParamLevelOut"
+   ],
+   [
+    "VoiceFilter",
+    8,
+    "kParamLevelOut"
+   ]
+  ],
+  "lphp": [
+   [
+    "FXDistortion",
+    3,
+    "kParamLPHP"
+   ]
+  ],
+  "makeup": [
+   [
+    "FXComp",
+    6,
+    "kParamMakeup"
+   ]
+  ],
+  "master_tuning": [
+   [
+    "Global",
+    1,
+    "kParamMasterTuning"
+   ]
+  ],
+  "octave": [
+   [
+    "Oscillator",
+    3,
+    "kParamOctave"
+   ]
+  ],
+  "offset_l": [
+   [
+    "FXDelay",
+    10,
+    "kParamOffsetL"
+   ]
+  ],
+  "offset_r": [
+   [
+    "FXDelay",
+    11,
+    "kParamOffsetR"
+   ]
+  ],
+  "output_width": [
+   [
+    "FXBode",
+    11,
+    "kParamOutputWidth"
+   ]
+  ],
+  "pan": [
+   [
+    "Oscillator",
+    2,
+    "kParamPan"
+   ]
+  ],
+  "pitch": [
+   [
+    "Oscillator",
+    4,
+    "kParamPitch"
+   ]
+  ],
+  "portamento_time": [
+   [
+    "Global",
+    3,
+    "kParamPortamentoTime"
+   ]
+  ],
+  "random_phase": [
+   [
+    "NoiseOsc",
+    3,
+    "kParamRandomPhase"
+   ],
+   [
+    "WTOsc",
+    9,
+    "kParamRandomPhase"
+   ]
+  ],
+  "rate": [
+   [
+    "FXChorus",
+    3,
+    "kParamRate"
+   ],
+   [
+    "FXFlanger",
+    3,
+    "kParamRate"
+   ],
+   [
+    "FXHyperD",
+    2,
+    "kParamRate"
+   ],
+   [
+    "FXPhaser",
+    3,
+    "kParamRate"
+   ],
+   [
+    "LFO",
+    0,
+    "kParamRate"
+   ]
+  ],
+  "ratio": [
+   [
+    "FXComp",
+    3,
+    "kParamRatio"
+   ]
+  ],
+  "release": [
+   [
+    "Env",
+    4,
+    "kParamRelease"
+   ],
+   [
+    "FXComp",
+    5,
+    "kParamRelease"
+   ]
+  ],
+  "reso": [
+   [
+    "FXFilter",
+    4,
+    "kParamReso"
+   ],
+   [
+    "VoiceFilter",
+    4,
+    "kParamReso"
+   ]
+  ],
+  "reso1": [
+   [
+    "FXEQ",
+    3,
+    "kParamReso1"
+   ]
+  ],
+  "reso2": [
+   [
+    "FXEQ",
+    4,
+    "kParamReso2"
+   ]
+  ],
+  "rise": [
+   [
+    "LFO",
+    2,
+    "kParamRise"
+   ]
+  ],
+  "shift": [
+   [
+    "FXBode",
+    3,
+    "kParamShift"
+   ]
+  ],
+  "size": [
+   [
+    "FXReverb",
+    2,
+    "kParamSize"
+   ],
+   [
+    "FXConv",
+    4,
+    "kParamSize"
+   ]
+  ],
+  "stereo": [
+   [
+    "FXFilter",
+    7,
+    "kParamStereo"
+   ],
+   [
+    "VoiceFilter",
+    7,
+    "kParamStereo"
+   ]
+  ],
+  "sustain": [
+   [
+    "Env",
+    3,
+    "kParamSustain"
+   ]
+  ],
+  "table_pos": [
+   [
+    "WTOsc",
+    6,
+    "kParamTablePos"
+   ]
+  ],
+  "thresh": [
+   [
+    "FXComp",
+    2,
+    "kParamThresh"
+   ]
+  ],
+  "thresh_ud0": [
+   [
+    "FXComp",
+    8,
+    "kParamThreshUD0"
+   ]
+  ],
+  "thresh_ud1": [
+   [
+    "FXComp",
+    9,
+    "kParamThreshUD1"
+   ]
+  ],
+  "thresh_ud2": [
+   [
+    "FXComp",
+    10,
+    "kParamThreshUD2"
+   ]
+  ],
+  "time_l": [
+   [
+    "FXDelay",
+    6,
+    "kParamTimeL"
+   ]
+  ],
+  "time_r": [
+   [
+    "FXDelay",
+    7,
+    "kParamTimeR"
+   ]
+  ],
+  "type": [
+   [
+    "FXFilter",
+    2,
+    "kParamType"
+   ]
+  ],
+  "type2": [
+   [
+    "FXEQ",
+    8,
+    "kParamType2"
+   ]
+  ],
+  "unison_stereo": [
+   [
+    "Oscillator",
+    28,
+    "kParamUnisonStereo"
+   ]
+  ],
+  "unison_warp": [
+   [
+    "Oscillator",
+    31,
+    "kParamUnisonWarp"
+   ]
+  ],
+  "value": [
+   [
+    "LFOPointModBus",
+    0,
+    "kParamValue"
+   ]
+  ],
+  "var": [
+   [
+    "FXFilter",
+    6,
+    "kParamVar"
+   ],
+   [
+    "VoiceFilter",
+    6,
+    "kParamVar"
+   ]
+  ],
+  "voice_amp": [
+   [
+    "Global",
+    2,
+    "kParamVoiceAmp"
+   ]
+  ],
+  "volume": [
+   [
+    "Oscillator",
+    1,
+    "kParamVolume"
+   ]
+  ],
+  "warp_amt": [
+   [
+    "WTOsc",
+    0,
+    "kParamWarp"
+   ]
+  ],
+  "wet": [
+   [
+    "FXChorus",
+    1,
+    "kParamWet"
+   ],
+   [
+    "FXComp",
+    1,
+    "kParamWet"
+   ],
+   [
+    "FXDelay",
+    1,
+    "kParamWet"
+   ],
+   [
+    "FXDistortion",
+    1,
+    "kParamWet"
+   ],
+   [
+    "FXFilter",
+    1,
+    "kParamWet"
+   ],
+   [
+    "FXFlanger",
+    1,
+    "kParamWet"
+   ],
+   [
+    "FXHyperD",
+    1,
+    "kParamWet"
+   ],
+   [
+    "FXPhaser",
+    1,
+    "kParamWet"
+   ],
+   [
+    "FXReverb",
+    1,
+    "kParamWet"
+   ],
+   [
+    "VoiceFilter",
+    1,
+    "kParamWet"
+   ],
+   [
+    "FXBode",
+    1,
+    "kParamWet"
+   ],
+   [
+    "FXConv",
+    1,
+    "kParamWet"
+   ]
+  ],
+  "width": [
+   [
+    "FXFlanger",
+    6,
+    "kParamWidth"
+   ],
+   [
+    "FXPhaser",
+    8,
+    "kParamWidth"
+   ],
+   [
+    "FXReverb",
+    7,
+    "kParamWidth"
+   ]
+  ]
+ },
+ "fx": {
+  "bode": [
+   "FXBode",
+   10
+  ],
+  "chorus": [
+   "FXChorus",
+   3
+  ],
+  "comp": [
+   "FXComp",
+   5
+  ],
+  "conv": [
+   "FXConv",
+   11
+  ],
+  "delay": [
+   "FXDelay",
+   4
+  ],
+  "distortion": [
+   "FXDistortion",
+   0
+  ],
+  "eq": [
+   "FXEQ",
+   7
+  ],
+  "filterfx": [
+   "FXFilter",
+   8
+  ],
+  "flanger": [
+   "FXFlanger",
+   1
+  ],
+  "hyper": [
+   "FXHyperD",
+   9
+  ],
+  "phaser": [
+   "FXPhaser",
+   2
+  ],
+  "reverb": [
+   "FXReverb",
+   6
+  ],
+  "split": [
+   "FXSplit",
+   13
+  ],
+  "split3": [
+   "FXSplit3",
+   14
+  ],
+  "split_ms": [
+   "FXSplitMS",
+   15
+  ],
+  "utils": [
+   "FXUtils",
+   12
+  ]
+ },
+ "engine_tag": {
+  "wt": "WTOsc",
+  "sample": "SampleOsc",
+  "spectral": "SpectralOsc",
+  "multisample": "MultiSampleOsc",
+  "granular": "GranularOsc"
+ },
+ "frame": {
+  "Env": [
+   "kParamCurve1",
+   "kParamCurve2",
+   "kParamCurve3",
+   "kParamRelease",
+   "kParamAttack",
+   "kParamDecay",
+   "kParamSustain",
+   "kParamVoiceStealRestart",
+   "kParamHold",
+   "kParamBeatSync"
+  ],
+  "FXBode": [
+   "kParamBeatSync",
+   "kParamBlur",
+   "kParamDelayBalance",
+   "kParamDelayTime",
+   "kParamFeedback",
+   "kParamMonoInput",
+   "kParamOutputMix",
+   "kParamOutputWidth",
+   "kParamRange",
+   "kParamShift",
+   "kParamWet"
+  ],
+  "FXChorus": [
+   "kParamFeedback",
+   "kParamWet",
+   "kParamFilt",
+   "kParamRate",
+   "kParamDepth",
+   "kParamDelay",
+   "kParamDelay2",
+   "kParamBeatSync",
+   "kParamFiltMode",
+   "kParamEnable"
+  ],
+  "FXComp": [
+   "kParamAttack",
+   "kParamRelease",
+   "kParamCompensatedWetDry",
+   "kParamGain0",
+   "kParamGain2",
+   "kParamRatioBelow",
+   "kParamMakeup",
+   "kParamThresh",
+   "kParamMultiband",
+   "kParamRatio",
+   "kParamThreshUD2",
+   "kParamThreshUD1",
+   "kParamThreshUD0",
+   "kParamWet",
+   "kParamEnable",
+   "kParamLevelOut"
+  ],
+  "FXConv": [
+   "kParamAttack",
+   "kParamDamping",
+   "kParamDecay",
+   "kParamIpTrim",
+   "kParamLevelOut",
+   "kParamMinPhase",
+   "kParamPredelay",
+   "kParamPredelayBeatSync",
+   "kParamSize",
+   "kParamTone",
+   "kParamWet"
+  ],
+  "FXDelay": [
+   "kParamBW",
+   "kParamFeedback",
+   "kParamWet",
+   "kParamFreq",
+   "kParamTimeR",
+   "kParamTimeL",
+   "kParamMode",
+   "kParamLink",
+   "kParamOffsetR",
+   "kParamBeatSync",
+   "kParamOffsetL",
+   "kParamEnable",
+   "kParamLevelOut"
+  ],
+  "FXDistortion": [
+   "kParamFreq",
+   "kParamDrive",
+   "kParamMode",
+   "kParamWet",
+   "kParamBW",
+   "kParamPrePost",
+   "kParamLPHP",
+   "kParamEnable",
+   "kParamLevelOut"
+  ],
+  "FXEQ": [
+   "kParamFreq1",
+   "kParamFreq2",
+   "kParamReso1",
+   "kParamReso2",
+   "kParamGain2",
+   "kParamType1",
+   "kParamGain1",
+   "kParamType2",
+   "kParamEnable"
+  ],
+  "FXFilter": [
+   "kParamFreq",
+   "kParamType",
+   "kParamReso",
+   "kParamDrive",
+   "kParamWet",
+   "kParamVar",
+   "kParamEnable",
+   "kParamStereo",
+   "kParamLevelOut"
+  ],
+  "FXFlanger": [
+   "kParamWet",
+   "kParamRate",
+   "kParamDepth",
+   "kParamFeedback",
+   "kParamWidth",
+   "kParamBeatSync",
+   "kParamEnable",
+   "kParamLevelOut"
+  ],
+  "FXHyperD": [
+   "kParamRate",
+   "kParamUnison",
+   "kParamWet",
+   "kParamDimESize",
+   "kParamDimEWet",
+   "kParamDetune",
+   "kParamEnable",
+   "kParamRetrig",
+   "kParamDimELevelOut"
+  ],
+  "FXPhaser": [
+   "kParamFeedback",
+   "kParamWet",
+   "kParamRate",
+   "kParamFreq",
+   "kParamDepth",
+   "kParamDepth2",
+   "kParamWidth",
+   "kParamBeatSync",
+   "kParamEnable"
+  ],
+  "FXReverb": [
+   "kParamDelay",
+   "kParamFreqB",
+   "kParamSize",
+   "kParamWet",
+   "kParamWidth",
+   "kParamType",
+   "kParamFreq",
+   "kParamFeedback",
+   "kParamPreDelay",
+   "kParamEnable",
+   "kParamLevelOut"
+  ],
+  "FXSplit": [
+   "kParamFreq",
+   "kParamFreq2"
+  ],
+  "FXUtils": [
+   "kParamBalance",
+   "kParamHPF",
+   "kParamLFXover",
+   "kParamLPF",
+   "kParamPolarityR",
+   "kParamWet",
+   "kParamWidth"
+  ],
+  "Global": [
+   "kParamMasterVolume",
+   "kParamLimitSameNotePolyphony",
+   "kParamS1Compatibility",
+   "kParamMonoToggle",
+   "kParamPolyCount",
+   "kParamPortamentoTime",
+   "kParamLegato",
+   "kParamPortaAlways",
+   "kParamBendRangeUp",
+   "kParamBendRangeDn",
+   "kParamModWheel",
+   "kParamOversampling",
+   "kParamPortaScaled",
+   "kParamPortamentoCurve",
+   "kParamVoiceAmp",
+   "kParamMasterTuning",
+   "kParamFXBus1Vol",
+   "kParamFXBus2Vol",
+   "kParamGlobalTuning"
+  ],
+  "LFO": [
+   "kParamDefaultMode",
+   "kParamMode",
+   "kParamRate",
+   "kParamBeatSync",
+   "kParamTriplets",
+   "kParamDotted",
+   "kParamRate10x",
+   "kParamType",
+   "kParamSmooth",
+   "kParamRise",
+   "kParamAnchored",
+   "kParamDelay",
+   "kParamPhase",
+   "kParamMono"
+  ],
+  "Macro": [
+   "kParamValue"
+  ],
+  "MidiClip": [
+   "kParamLaunchRetrig"
+  ],
+  "ModSlot": [
+   "kParamAmount",
+   "kParamBipolar",
+   "kParamOut",
+   "kParamBypass",
+   "kParamCurveIn",
+   "kParamAuxInverted",
+   "kParamAuxCurve"
+  ],
+  "NoiseOsc": [
+   "kParamColor",
+   "kParamOneShot",
+   "kParamInitialPhase",
+   "kParamRandomPhase",
+   "kParamFine",
+   "kParamNoiseType"
+  ],
+  "Oscillator": [
+   "kParamVolume",
+   "kParamEnable",
+   "kParamOctave",
+   "kParamDetune",
+   "kParamUnison",
+   "kParamDetuneWid",
+   "kParamFine",
+   "kParamPan",
+   "kParamUnisonStereo",
+   "kParamPitchTrack",
+   "kParamPitch",
+   "kParamDetuneMode",
+   "kParamUnisonRange",
+   "kParamUnisonStack",
+   "kParamCoarsePit",
+   "kParamUnisonWarp",
+   "kParamType",
+   "kParamLoopStart"
+  ],
+  "RoutingSlot": [
+   "kParamRoutingDest",
+   "kParamFXBus1Level",
+   "kParamFXBus2Level",
+   "kParamViaEnv1"
+  ],
+  "SubOsc": [
+   "kParamShape",
+   "kParamContiguousPhase"
+  ],
+  "VoiceFilter": [
+   "kParamReso",
+   "kParamFreq",
+   "kParamEnable",
+   "kParamType",
+   "kParamDrive",
+   "kParamVar",
+   "kParamWet",
+   "kParamKeyTrack",
+   "kParamStereo",
+   "kParamLevelOut"
+  ],
+  "WTOsc": [
+   "kParamTablePos",
+   "kParamWarpMenu",
+   "kParamWarp",
+   "kParamRandomPhase",
+   "kParamInitialPhase",
+   "kParamWarpVar",
+   "kParamUnisonWTPos",
+   "kParamPhaseMemory"
+  ]
+ },
+ "wtpath": {
+  "Analog/4088.wav": [
+   "/Analog/4088.wav",
+   "Analog/4088.wav"
+  ],
+  "Analog/Acid.wav": [
+   "/Analog/Acid.wav",
+   "Analog/Acid.wav"
+  ],
+  "Analog/Analog_BD_Sin.wav": [
+   "/Analog/Analog_BD_Sin.wav",
+   "Analog/Analog_BD_Sin.wav"
+  ],
+  "Analog/BS2_-_Acid.wav": [
+   "/Analog/BS2 - Acid.wav",
+   "Analog/BS2 - Acid.wav"
+  ],
+  "Analog/BS2_-_Filthy.wav": [
+   "/Analog/BS2 - Filthy.wav",
+   "Analog/BS2 - Filthy.wav"
+  ],
+  "Analog/BS2_-_Subby_Saw.wav": [
+   "/Analog/BS2 - Subby Saw.wav",
+   "Analog/BS2 - Subby Saw.wav"
+  ],
+  "Analog/BSOD_Square.wav": [
+   "/Analog/BSOD_Square.wav",
+   "Analog/BSOD_Square.wav"
+  ],
+  "Analog/Basic_Cjw.wav": [
+   "/Analog/Basic_Cjw.wav",
+   "Analog/Basic_Cjw.wav"
+  ],
+  "Analog/Basic_McB.wav": [
+   "/Analog/Basic_McB.wav",
+   "Analog/Basic_McB.wav"
+  ],
+  "Analog/Basic_Mdc.wav": [
+   "/Analog/Basic_Mdc.wav",
+   "Analog/Basic_Mdc.wav"
+  ],
+  "Analog/Basic_Mg.wav": [
+   "/Analog/Basic Mg.wav",
+   "Analog/Basic Mg.wav"
+  ],
+  "Analog/Basic_Mini.wav": [
+   "/Analog/Basic Mini.wav",
+   "Analog/Basic Mini.wav"
+  ],
+  "Analog/Basic_Shapes.wav": [
+   "/Analog/Basic Shapes.wav",
+   "Analog/Basic Shapes.wav"
+  ],
+  "Analog/Basic_Wrd.wav": [
+   "/Analog/Basic_Wrd.wav",
+   "Analog/Basic_Wrd.wav"
+  ],
+  "Analog/DS_Saw_and_Tri.wav": [
+   "/Analog/DS Saw and Tri.wav",
+   "Analog/DS Saw and Tri.wav"
+  ],
+  "Analog/Jno.wav": [
+   "/Analog/Jno.wav",
+   "Analog/Jno.wav"
+  ],
+  "Analog/MATRIXY_C64.wav": [
+   "/Analog/MATRIXY C64.wav",
+   "Analog/MATRIXY C64.wav"
+  ],
+  "Analog/MB_Saw.wav": [
+   "/Analog/MB Saw.wav",
+   "Analog/MB Saw.wav"
+  ],
+  "Analog/MB_Triangle_(Metal).wav": [
+   "/Analog/MB Triangle (Metal).wav",
+   "Analog/MB Triangle (Metal).wav"
+  ],
+  "Analog/Mellow_But_Instable.wav": [
+   "/Analog/Mellow But Instable.wav",
+   "Analog/Mellow But Instable.wav"
+  ],
+  "Analog/MiniBass.wav": [
+   "/Analog/MiniBass.wav",
+   "Analog/MiniBass.wav"
+  ],
+  "Analog/MsAw.wav": [
+   "/Analog/MsAw.wav",
+   "Analog/MsAw.wav"
+  ],
+  "Analog/MsPw.wav": [
+   "/Analog/MsPw.wav",
+   "Analog/MsPw.wav"
+  ],
+  "Analog/PWM_C64.wav": [
+   "/Analog/PWM C64.wav",
+   "Analog/PWM C64.wav"
+  ],
+  "Analog/PWM_DS.wav": [
+   "/Analog/PWM DS.wav",
+   "Analog/PWM DS.wav"
+  ],
+  "Analog/PWM_Genji.wav": [
+   "/Analog/PWM Genji.wav",
+   "Analog/PWM Genji.wav"
+  ],
+  "Analog/PWM_Inception.wav": [
+   "/Analog/PWM Inception.wav",
+   "Analog/PWM Inception.wav"
+  ],
+  "Analog/PWM_Juno.wav": [
+   "/Analog/PWM Juno.wav",
+   "Analog/PWM Juno.wav"
+  ],
+  "Analog/PWM_LPF.wav": [
+   "/Analog/PWM LPF.wav",
+   "Analog/PWM LPF.wav"
+  ],
+  "Analog/PWM_MG.wav": "/Analog/PWM MG.wav",
+  "Analog/PWM_Maths.wav": "/Analog/PWM Maths.wav",
+  "Analog/PWM_Maths_2.wav": "/Analog/PWM Maths 2.wav",
+  "Analog/PWM_Mdc.wav": [
+   "/Analog/PWM_Mdc.wav",
+   "Analog/PWM_Mdc.wav"
+  ],
+  "Analog/PWM_MedicineHat.wav": [
+   "/Analog/PWM MedicineHat.wav",
+   "Analog/PWM MedicineHat.wav"
+  ],
+  "Analog/PWM_Mini.wav": [
+   "/Analog/PWM Mini.wav",
+   "Analog/PWM Mini.wav"
+  ],
+  "Analog/PWM_Reso.wav": [
+   "/Analog/PWM Reso.wav",
+   "Analog/PWM Reso.wav"
+  ],
+  "Analog/PWM_Restricted.wav": [
+   "/Analog/PWM Restricted.wav",
+   "Analog/PWM Restricted.wav"
+  ],
+  "Analog/PWM_Trench.wav": [
+   "/Analog/PWM Trench.wav",
+   "Analog/PWM Trench.wav"
+  ],
+  "Analog/SQR_SAW_Wrd.wav": [
+   "/Analog/SQR_SAW_Wrd.wav",
+   "Analog/SQR_SAW_Wrd.wav"
+  ],
+  "Analog/SawRounded.wav": [
+   "/Analog/SawRounded.wav",
+   "Analog/SawRounded.wav"
+  ],
+  "Analog/SawRoundedToSquare.wav": [
+   "/Analog/SawRoundedToSquare.wav",
+   "Analog/SawRoundedToSquare.wav"
+  ],
+  "Analog/Sweep20.wav": [
+   "/Analog/Sweep20.wav",
+   "Analog/Sweep20.wav"
+  ],
+  "Digital/Anti-Stasis.wav": [
+   "/Digital/Anti-Stasis.wav",
+   "Digital/Anti-Stasis.wav"
+  ],
+  "Digital/BottleBlow.wav": [
+   "/Digital/BottleBlow.wav",
+   "Digital/BottleBlow.wav"
+  ],
+  "Digital/CrushWub.wav": [
+   "/Digital/CrushWub.wav",
+   "Digital/CrushWub.wav"
+  ],
+  "Digital/Debussy.wav": [
+   "/Digital/Debussy.wav",
+   "Digital/Debussy.wav"
+  ],
+  "Digital/DirtySaw.wav": [
+   "/Digital/DirtySaw.wav",
+   "Digital/DirtySaw.wav"
+  ],
+  "Digital/Dist_8bit_Fwap.wav": [
+   "/Digital/Dist 8bit Fwap.wav",
+   "Digital/Dist 8bit Fwap.wav"
+  ],
+  "Digital/Dist_Bass_Dropper.wav": [
+   "/Digital/Dist Bass Dropper.wav",
+   "Digital/Dist Bass Dropper.wav"
+  ],
+  "Digital/Dist_C2.wav": [
+   "/Digital/Dist C2.wav",
+   "Digital/Dist C2.wav"
+  ],
+  "Digital/Dist_Fwapper_SQ.wav": [
+   "/Digital/Dist Fwapper SQ.wav",
+   "Digital/Dist Fwapper SQ.wav"
+  ],
+  "Digital/Dist_Sub_Dskperc.wav": "/Digital/Dist Sub Dskperc.wav",
+  "Digital/Dist_WaTech.wav": [
+   "/Digital/Dist WaTech.wav",
+   "Digital/Dist WaTech.wav"
+  ],
+  "Digital/Dist_d00t.wav": [
+   "/Digital/Dist d00t.wav",
+   "Digital/Dist d00t.wav"
+  ],
+  "Digital/Dull_toy.wav": [
+   "/Digital/Dull_toy.wav",
+   "Digital/Dull_toy.wav"
+  ],
+  "Digital/Ethos.wav": [
+   "/Digital/Ethos.wav",
+   "Digital/Ethos.wav"
+  ],
+  "Digital/Evol_Longreece.wav": [
+   "/Digital/Evol Longreece.wav",
+   "Digital/Evol Longreece.wav"
+  ],
+  "Digital/Evol_Sweep.wav": [
+   "/Digital/Evol Sweep.wav",
+   "Digital/Evol Sweep.wav"
+  ],
+  "Digital/Evolution.wav": [
+   "/Digital/Evolution.wav",
+   "Digital/Evolution.wav"
+  ],
+  "Digital/FFT_Add_2nds.wav": [
+   "/Digital/FFT_Add_2nds.wav",
+   "Digital/FFT_Add_2nds.wav"
+  ],
+  "Digital/FFT_Add_3rds.wav": [
+   "/Digital/FFT_Add_3rds.wav",
+   "Digital/FFT_Add_3rds.wav"
+  ],
+  "Digital/FFT_Add_4ths.wav": [
+   "/Digital/FFT_Add_4ths.wav",
+   "Digital/FFT_Add_4ths.wav"
+  ],
+  "Digital/FFT_Animal_1.wav": [
+   "/Digital/FFT_Animal 1.wav",
+   "Digital/FFT_Animal 1.wav"
+  ],
+  "Digital/FFT_SQUEAL.wav": [
+   "/Digital/FFT_SQUEAL.wav",
+   "Digital/FFT_SQUEAL.wav"
+  ],
+  "Digital/FMFM.wav": [
+   "/Digital/FMFM.wav",
+   "Digital/FMFM.wav"
+  ],
+  "Digital/FM_Freak.wav": [
+   "/Digital/FM_Freak.wav",
+   "Digital/FM_Freak.wav"
+  ],
+  "Digital/FM_Splat.wav": [
+   "/Digital/FM_Splat.wav",
+   "Digital/FM_Splat.wav"
+  ],
+  "Digital/GS-xello.wav": [
+   "/Digital/GS-xello.wav",
+   "Digital/GS-xello.wav"
+  ],
+  "Digital/Gritty.wav": [
+   "/Digital/Gritty.wav",
+   "Digital/Gritty.wav"
+  ],
+  "Digital/HarmonicSeries.wav": [
+   "/Digital/HarmonicSeries.wav",
+   "Digital/HarmonicSeries.wav"
+  ],
+  "Digital/Harmonic_Morph.wav": [
+   "/Digital/Harmonic Morph.wav",
+   "Digital/Harmonic Morph.wav"
+  ],
+  "Digital/Harmonic_Subtle.wav": [
+   "/Digital/Harmonic Subtle.wav",
+   "Digital/Harmonic Subtle.wav"
+  ],
+  "Digital/Hoo.wav": "/Digital/Hoo.wav",
+  "Digital/Hypa.wav": [
+   "/Digital/Hypa.wav",
+   "Digital/Hypa.wav"
+  ],
+  "Digital/ICanHasKick.wav": [
+   "/Digital/ICanHasKick.wav",
+   "Digital/ICanHasKick.wav"
+  ],
+  "Digital/Kream.wav": [
+   "/Digital/Kream.wav",
+   "Digital/Kream.wav"
+  ],
+  "Digital/Mario.wav": "/Digital/Mario.wav",
+  "Digital/Misfits.wav": [
+   "/Digital/Misfits.wav",
+   "Digital/Misfits.wav"
+  ],
+  "Digital/PWM_Electro.wav": [
+   "/Digital/PWM Electro.wav",
+   "Digital/PWM Electro.wav"
+  ],
+  "Digital/PerfectSQSteps.wav": [
+   "/Digital/PerfectSQSteps.wav",
+   "Digital/PerfectSQSteps.wav"
+  ],
+  "Digital/Prime.wav": [
+   "/Digital/Prime.wav",
+   "Digital/Prime.wav"
+  ],
+  "Digital/Razor.wav": [
+   "/Digital/Razor.wav",
+   "Digital/Razor.wav"
+  ],
+  "Digital/Reese.wav": [
+   "/Digital/Reese.wav",
+   "Digital/Reese.wav"
+  ],
+  "Digital/Ring.wav": [
+   "/Digital/Ring.wav",
+   "Digital/Ring.wav"
+  ],
+  "Digital/SSQ.wav": [
+   "/Digital/SSQ.wav",
+   "Digital/SSQ.wav"
+  ],
+  "Digital/Scream.wav": [
+   "/Digital/Scream.wav",
+   "Digital/Scream.wav"
+  ],
+  "Digital/Shrats.wav": "/Digital/Shrats.wav",
+  "Digital/SubBass_1.wav": [
+   "/Digital/SubBass_1.wav",
+   "Digital/SubBass_1.wav"
+  ],
+  "Digital/Tigra.wav": [
+   "/Digital/Tigra.wav",
+   "Digital/Tigra.wav"
+  ],
+  "Digital/VintageSynth.wav": [
+   "/Digital/VintageSynth.wav",
+   "Digital/VintageSynth.wav"
+  ],
+  "Digital/Voxu.wav": [
+   "/Digital/Voxu.wav",
+   "Digital/Voxu.wav"
+  ],
+  "Digital/Waveterminal.wav": [
+   "/Digital/Waveterminal.wav",
+   "Digital/Waveterminal.wav"
+  ],
+  "Digital/Wraith.wav": [
+   "/Digital/Wraith.wav",
+   "Digital/Wraith.wav"
+  ],
+  "Digital/bipole_harmonic.wav": [
+   "/Digital/bipole_harmonic.wav",
+   "Digital/bipole_harmonic.wav"
+  ],
+  "S2_Tables/Default_Shapes.wav": "S2 Tables/Default Shapes.wav",
+  "S2_Tables/Digital/Basic_OPL.wav": "S2 Tables/Digital/Basic OPL.wav",
+  "Vowel/Allophones.wav": [
+   "/Vowel/Allophones.wav",
+   "Vowel/Allophones.wav"
+  ],
+  "Vowel/DudaChoir.wav": [
+   "/Vowel/DudaChoir.wav",
+   "Vowel/DudaChoir.wav"
+  ],
+  "Vowel/E_Yeah.wav": [
+   "/Vowel/E_Yeah.wav",
+   "Vowel/E_Yeah.wav"
+  ],
+  "Vowel/Fred_Likes_Bass.wav": [
+   "/Vowel/Fred_Likes_Bass.wav",
+   "Vowel/Fred_Likes_Bass.wav"
+  ],
+  "Vowel/ML_Addifunk.wav": [
+   "/Vowel/ML Addifunk.wav",
+   "Vowel/ML Addifunk.wav"
+  ],
+  "Vowel/Native_Curse.wav": [
+   "/Vowel/Native Curse.wav",
+   "Vowel/Native Curse.wav"
+  ],
+  "Vowel/OOH_YAH_OO.wav": [
+   "/Vowel/OOH_YAH_OO.wav",
+   "Vowel/OOH_YAH_OO.wav"
+  ],
+  "Vowel/Retro_Speaking.wav": [
+   "/Vowel/Retro_Speaking.wav",
+   "Vowel/Retro_Speaking.wav"
+  ],
+  "Vowel/SAM_SERUM.wav": [
+   "/Vowel/SAM_SERUM.wav",
+   "Vowel/SAM_SERUM.wav"
+  ],
+  "Vowel/SAM_Speaks.wav": [
+   "/Vowel/SAM_Speaks.wav",
+   "Vowel/SAM_Speaks.wav"
+  ],
+  "Vowel/WahWah.wav": [
+   "/Vowel/WahWah.wav",
+   "Vowel/WahWah.wav"
+  ]
+ },
+ "noisepath": {
+  "Analog/ARP_circuit.wav": [
+   "/Analog/ARP circuit.wav",
+   "Analog/ARP circuit.wav"
+  ],
+  "Analog/ARP_pink.wav": [
+   "/Analog/ARP pink.wav",
+   "Analog/ARP pink.wav"
+  ],
+  "Analog/ARP_white.wav": [
+   "/Analog/ARP white.wav",
+   "Analog/ARP white.wav"
+  ],
+  "Analog/AlphaNz.wav": [
+   "/Analog/AlphaNz.wav",
+   "Analog/AlphaNz.wav"
+  ],
+  "Analog/BrightWhite.wav": [
+   "/Analog/BrightWhite.wav",
+   "Analog/BrightWhite.wav"
+  ],
+  "Analog/J106.wav": [
+   "/Analog/J106.wav",
+   "Analog/J106.wav"
+  ],
+  "Analog/J106_Chorus.wav": [
+   "/Analog/J106 Chorus.wav",
+   "Analog/J106 Chorus.wav"
+  ],
+  "Analog/J106_HP.wav": [
+   "/Analog/J106 HP.wav",
+   "Analog/J106 HP.wav"
+  ],
+  "Analog/J106_HP_Cho.wav": [
+   "/Analog/J106 HP_Cho.wav",
+   "Analog/J106 HP_Cho.wav"
+  ],
+  "Analog/J_60.wav": [
+   "/Analog/J 60.wav",
+   "Analog/J 60.wav"
+  ],
+  "Analog/MicrKrg_Noise.wav": [
+   "/Analog/MicrKrg Noise.wav",
+   "Analog/MicrKrg Noise.wav"
+  ],
+  "Analog/OrganNoise.wav": [
+   "/Analog/OrganNoise.wav",
+   "Analog/OrganNoise.wav"
+  ],
+  "Analog/SH1_Noise.wav": [
+   "/Analog/SH1 Noise.wav",
+   "Analog/SH1 Noise.wav"
+  ],
+  "Analog/SID_drone.wav": [
+   "/Analog/SID drone.wav",
+   "Analog/SID drone.wav"
+  ],
+  "Analog/SID_noise.wav": [
+   "/Analog/SID noise.wav",
+   "Analog/SID noise.wav"
+  ],
+  "Analog/SID_whine.wav": [
+   "/Analog/SID whine.wav",
+   "Analog/SID whine.wav"
+  ],
+  "Attacks_Kick/XF_KikAtk_01.wav": "/Attacks_Kick/XF_KikAtk_01.wav",
+  "Attacks_Kick/XF_KikAtk_02.wav": [
+   "/Attacks_Kick/XF_KikAtk_02.wav",
+   "Attacks_Kick/XF_KikAtk_02.wav"
+  ],
+  "Attacks_Kick/XF_KikAtk_03.wav": [
+   "/Attacks_Kick/XF_KikAtk_03.wav",
+   "Attacks_Kick/XF_KikAtk_03.wav"
+  ],
+  "Attacks_Kick/XF_KikAtk_04.wav": [
+   "/Attacks_Kick/XF_KikAtk_04.wav",
+   "Attacks_Kick/XF_KikAtk_04.wav"
+  ],
+  "Attacks_Kick/XF_KikAtk_05.wav": [
+   "/Attacks_Kick/XF_KikAtk_05.wav",
+   "Attacks_Kick/XF_KikAtk_05.wav"
+  ],
+  "Attacks_Kick/XF_KikAtk_06.wav": [
+   "/Attacks_Kick/XF_KikAtk_06.wav",
+   "Attacks_Kick/XF_KikAtk_06.wav"
+  ],
+  "Attacks_Kick/XF_KikAtk_07.wav": [
+   "/Attacks_Kick/XF_KikAtk_07.wav",
+   "Attacks_Kick/XF_KikAtk_07.wav"
+  ],
+  "Attacks_Kick/XF_KikAtk_08.wav": "/Attacks_Kick/XF_KikAtk_08.wav",
+  "Attacks_Kick/XF_KikAtk_09.wav": [
+   "/Attacks_Kick/XF_KikAtk_09.wav",
+   "Attacks_Kick/XF_KikAtk_09.wav"
+  ],
+  "Attacks_Kick/XF_KikAtk_10.wav": [
+   "/Attacks_Kick/XF_KikAtk_10.wav",
+   "Attacks_Kick/XF_KikAtk_10.wav"
+  ],
+  "Attacks_Kick/XF_KikAtk_11.wav": "/Attacks_Kick/XF_KikAtk_11.wav",
+  "Attacks_Kick/XF_KikAtk_13.wav": [
+   "/Attacks_Kick/XF_KikAtk_13.wav",
+   "Attacks_Kick/XF_KikAtk_13.wav"
+  ],
+  "Attacks_Kick/XF_KikAtk_14.wav": [
+   "Attacks_Kick/XF_KikAtk_14.wav",
+   "/Attacks_Kick/XF_KikAtk_14.wav"
+  ],
+  "Attacks_Kick/XF_KikAtk_15.wav": "/Attacks_Kick/XF_KikAtk_15.wav",
+  "Attacks_Kick/XF_KikAtk_16.wav": [
+   "/Attacks_Kick/XF_KikAtk_16.wav",
+   "Attacks_Kick/XF_KikAtk_16.wav"
+  ],
+  "Attacks_Kick/XF_KikAtk_17.wav": "/Attacks_Kick/XF_KikAtk_17.wav",
+  "Attacks_Kick/XF_KikAtk_19.wav": "/Attacks_Kick/XF_KikAtk_19.wav",
+  "Attacks_Kick/XF_KikAtk_20.wav": "/Attacks_Kick/XF_KikAtk_20.wav",
+  "Attacks_Kick/XF_KikAtk_22.wav": [
+   "/Attacks_Kick/XF_KikAtk_22.wav",
+   "Attacks_Kick/XF_KikAtk_22.wav"
+  ],
+  "Attacks_Kick/XF_KikAtk_24.wav": "/Attacks_Kick/XF_KikAtk_24.wav",
+  "Attacks_Kick/XF_KikAtk_25.wav": [
+   "/Attacks_Kick/XF_KikAtk_25.wav",
+   "Attacks_Kick/XF_KikAtk_25.wav"
+  ],
+  "Attacks_Kick/XF_KikAtk_26.wav": "Attacks_Kick/XF_KikAtk_26.wav",
+  "Attacks_Kick/XF_KikAtk_27.wav": "Attacks_Kick/XF_KikAtk_27.wav",
+  "Attacks_Kick/XF_KikAtk_29.wav": "/Attacks_Kick/XF_KikAtk_29.wav",
+  "Attacks_Kick/XF_KikAtk_30.wav": "/Attacks_Kick/XF_KikAtk_30.wav",
+  "Attacks_Kick/XF_KikAtk_31.wav": "/Attacks_Kick/XF_KikAtk_31.wav",
+  "Attacks_Kick/XF_KikAtk_32.wav": [
+   "/Attacks_Kick/XF_KikAtk_32.wav",
+   "Attacks_Kick/XF_KikAtk_32.wav"
+  ],
+  "Attacks_Kick/XF_KikAtk_33.wav": "Attacks_Kick/XF_KikAtk_33.wav",
+  "Attacks_Kick/XF_KikAtk_34.wav": "Attacks_Kick/XF_KikAtk_34.wav",
+  "Attacks_Kick/XF_KikAtk_36.wav": "/Attacks_Kick/XF_KikAtk_36.wav",
+  "Attacks_Kick/XF_KikAtk_38.wav": "/Attacks_Kick/XF_KikAtk_38.wav",
+  "Attacks_Kick/XF_KikAtk_39.wav": "/Attacks_Kick/XF_KikAtk_39.wav",
+  "Attacks_Kick/XF_KikAtk_40.wav": "/Attacks_Kick/XF_KikAtk_40.wav",
+  "Attacks_Kick/XF_KikAtk_41.wav": [
+   "/Attacks_Kick/XF_KikAtk_41.wav",
+   "Attacks_Kick/XF_KikAtk_41.wav"
+  ],
+  "Attacks_Kick/XF_KikAtk_48.wav": "/Attacks_Kick/XF_KikAtk_48.wav",
+  "Attacks_Kick/XF_KikAtk_49.wav": "Attacks_Kick/XF_KikAtk_49.wav",
+  "Attacks_Kick/XF_KikAtk_54.wav": "/Attacks_Kick/XF_KikAtk_54.wav",
+  "Attacks_Kick/XF_KikAtk_56.wav": "/Attacks_Kick/XF_KikAtk_56.wav",
+  "Attacks_Kick/XF_KikAtk_57.wav": "/Attacks_Kick/XF_KikAtk_57.wav",
+  "Attacks_Kick/XF_KikAtk_58.wav": "/Attacks_Kick/XF_KikAtk_58.wav",
+  "Attacks_Kick/XF_KikAtk_59.wav": [
+   "/Attacks_Kick/XF_KikAtk_59.wav",
+   "Attacks_Kick/XF_KikAtk_59.wav"
+  ],
+  "Attacks_Kick/XF_KikAtk_60.wav": "/Attacks_Kick/XF_KikAtk_60.wav",
+  "Attacks_Kick/XF_KikAtk_61.wav": "Attacks_Kick/XF_KikAtk_61.wav",
+  "Attacks_Kick/XF_KikAtk_64.wav": "/Attacks_Kick/XF_KikAtk_64.wav",
+  "Attacks_Misc/Claps_LR_1.wav": "/Attacks_Misc/Claps LR 1.wav",
+  "Attacks_Misc/GlassLid_1.wav": "/Attacks_Misc/GlassLid 1.wav",
+  "Attacks_Misc/GlassLid_2.wav": [
+   "/Attacks_Misc/GlassLid 2.wav",
+   "Attacks_Misc/GlassLid 2.wav"
+  ],
+  "Attacks_Misc/GlassLid_3.wav": [
+   "/Attacks_Misc/GlassLid 3.wav",
+   "Attacks_Misc/GlassLid 3.wav"
+  ],
+  "Attacks_Misc/GlassLid_4.wav": [
+   "/Attacks_Misc/GlassLid 4.wav",
+   "Attacks_Misc/GlassLid 4.wav"
+  ],
+  "Attacks_Misc/GlassLid_5.wav": [
+   "/Attacks_Misc/GlassLid 5.wav",
+   "Attacks_Misc/GlassLid 5.wav"
+  ],
+  "Attacks_Misc/Kick_XF_Small_1.wav": "/Attacks_Misc/Kick XF Small 1.wav",
+  "Attacks_Misc/Kick_XF_Small_5.wav": "/Attacks_Misc/Kick XF Small 5.wav",
+  "Attacks_Misc/Strum1.aif": [
+   "/Attacks_Misc/Strum1.aif",
+   "Attacks_Misc/Strum1.aif"
+  ],
+  "Attacks_Misc/Strum2.aif": "/Attacks_Misc/Strum2.aif",
+  "Attacks_Misc/Strum3.aif": "Attacks_Misc/Strum3.aif",
+  "Attacks_Misc/TransPerc1.wav": [
+   "/Attacks_Misc/TransPerc1.wav",
+   "Attacks_Misc/TransPerc1.wav"
+  ],
+  "Attacks_Misc/TransPerc2.wav": "/Attacks_Misc/TransPerc2.wav",
+  "Attacks_Misc/TransPerc3.wav": "/Attacks_Misc/TransPerc3.wav",
+  "Attacks_Misc/XF_HatSlice1.aif": "/Attacks_Misc/XF_HatSlice1.aif",
+  "Attacks_Misc/XF_HatSlice2.aif": "/Attacks_Misc/XF_HatSlice2.aif",
+  "Attacks_Misc/XF_Slice_1.aif": "/Attacks_Misc/XF_Slice_1.aif",
+  "Attacks_Misc/XF_Slice_2.aif": [
+   "/Attacks_Misc/XF_Slice_2.aif",
+   "Attacks_Misc/XF_Slice_2.aif"
+  ],
+  "Attacks_Misc/XF_Slice_3.aif": "/Attacks_Misc/XF_Slice_3.aif",
+  "Attacks_Misc/elastic_1.wav": "/Attacks_Misc/elastic 1.wav",
+  "Attacks_Misc/elastic_2.wav": [
+   "/Attacks_Misc/elastic 2.wav",
+   "Attacks_Misc/elastic 2.wav"
+  ],
+  "Attacks_Misc/gtr_mute_1.wav": "/Attacks_Misc/gtr mute 1.wav",
+  "Attacks_Misc/gtr_mute_2.wav": "/Attacks_Misc/gtr mute 2.wav",
+  "Attacks_Misc/guitarsmack_1.wav": "/Attacks_Misc/guitarsmack 1.wav",
+  "Attacks_Misc/guitarsmack_2.wav": "/Attacks_Misc/guitarsmack 2.wav",
+  "Attacks_Misc/icon_hat_a.wav": "/Attacks_Misc/icon_hat a.wav",
+  "Attacks_Misc/icon_kick_a.wav": "/Attacks_Misc/icon_kick a.wav",
+  "Attacks_Misc/icon_kick_b.wav": "/Attacks_Misc/icon_kick b.wav",
+  "Attacks_Misc/icon_kick_d.wav": "/Attacks_Misc/icon_kick d.wav",
+  "Attacks_Misc/icon_snare_b.wav": "/Attacks_Misc/icon_snare b.wav",
+  "Attacks_Misc/icon_snare_rim.wav": "/Attacks_Misc/icon_snare rim.wav",
+  "Attacks_Misc/icon_snare_rim_b.wav": "/Attacks_Misc/icon_snare_rim b.wav",
+  "Attacks_Misc/icon_tom_fl.wav": "Attacks_Misc/icon_tom fl.wav",
+  "Attacks_Misc/kick_trans_1.wav": "/Attacks_Misc/kick trans 1.wav",
+  "Attacks_Misc/kick_trans_2.wav": "/Attacks_Misc/kick trans 2.wav",
+  "Attacks_Misc/kick_trans_3.wav": "/Attacks_Misc/kick trans 3.wav",
+  "Attacks_Misc/kick_trans_4.wav": "/Attacks_Misc/kick trans 4.wav",
+  "Attacks_Misc/kick_trans_5.wav": "/Attacks_Misc/kick trans 5.wav",
+  "Attacks_Misc/kick_trans_6.wav": "/Attacks_Misc/kick trans 6.wav",
+  "Attacks_Misc/metal_tick_1.wav": [
+   "/Attacks_Misc/metal tick 1.wav",
+   "Attacks_Misc/metal tick 1.wav"
+  ],
+  "Attacks_Misc/metal_tick_2.wav": [
+   "/Attacks_Misc/metal tick 2.wav",
+   "Attacks_Misc/metal tick 2.wav"
+  ],
+  "Attacks_Misc/shaker_oats_1.wav": "/Attacks_Misc/shaker oats 1.wav",
+  "Attacks_Misc/shaker_oats_2.wav": "/Attacks_Misc/shaker oats 2.wav",
+  "Attacks_Misc/shaker_rice.wav": "/Attacks_Misc/shaker rice.wav",
+  "Attacks_Misc/snap_1.wav": [
+   "/Attacks_Misc/snap 1.wav",
+   "Attacks_Misc/snap 1.wav"
+  ],
+  "Attacks_Misc/snap_2.wav": [
+   "Attacks_Misc/snap 2.wav",
+   "/Attacks_Misc/snap 2.wav"
+  ],
+  "FP_Inharms/Inharmx_0.aif": [
+   "/FP_Inharms/Inharmx 0.aif",
+   "FP_Inharms/Inharmx 0.aif"
+  ],
+  "FP_Inharms/Inharmx_1.aif": [
+   "FP_Inharms/Inharmx 1.aif",
+   "/FP_Inharms/Inharmx 1.aif"
+  ],
+  "FP_Inharms/Inharmx_2.aif": [
+   "/FP_Inharms/Inharmx 2.aif",
+   "FP_Inharms/Inharmx 2.aif"
+  ],
+  "FP_Inharms/Inharmx_3.aif": [
+   "/FP_Inharms/Inharmx 3.aif",
+   "FP_Inharms/Inharmx 3.aif"
+  ],
+  "FP_Inharms/Inharmx_4.aif": [
+   "/FP_Inharms/Inharmx 4.aif",
+   "FP_Inharms/Inharmx 4.aif"
+  ],
+  "FP_Inharms/Inharmx_5.aif": [
+   "/FP_Inharms/Inharmx 5.aif",
+   "FP_Inharms/Inharmx 5.aif"
+  ],
+  "FP_Inharms/Inharmx_6.aif": [
+   "/FP_Inharms/Inharmx 6.aif",
+   "FP_Inharms/Inharmx 6.aif"
+  ],
+  "FP_Inharms/Inharmx_7.aif": "/FP_Inharms/Inharmx 7.aif",
+  "FP_Inharms/Inharmx_8.aif": "/FP_Inharms/Inharmx 8.aif",
+  "FP_Inharms/Inharmx_9.aif": [
+   "FP_Inharms/Inharmx 9.aif",
+   "/FP_Inharms/Inharmx 9.aif"
+  ],
+  "Organics/AC_hum1.wav": [
+   "Organics/AC hum1.wav",
+   "/Organics/AC hum1.wav"
+  ],
+  "Organics/AC_hum2.wav": [
+   "/Organics/AC hum2.wav",
+   "Organics/AC hum2.wav"
+  ],
+  "Organics/Air_Can_1.wav": [
+   "/Organics/Air Can 1.wav",
+   "Organics/Air Can 1.wav"
+  ],
+  "Organics/Air_Can_2.wav": [
+   "/Organics/Air Can 2.wav",
+   "Organics/Air Can 2.wav"
+  ],
+  "Organics/Air_Can_3.wav": [
+   "/Organics/Air Can 3.wav",
+   "Organics/Air Can 3.wav"
+  ],
+  "Organics/Air_Can_4.wav": [
+   "/Organics/Air Can 4.wav",
+   "Organics/Air Can 4.wav"
+  ],
+  "Organics/Air_Can_5.wav": [
+   "/Organics/Air Can 5.wav",
+   "Organics/Air Can 5.wav"
+  ],
+  "Organics/CymLoop.wav": [
+   "/Organics/CymLoop.wav",
+   "Organics/CymLoop.wav"
+  ],
+  "Organics/CymMicBleed.wav": [
+   "/Organics/CymMicBleed.wav",
+   "Organics/CymMicBleed.wav"
+  ],
+  "Organics/H-Breath.wav": [
+   "/Organics/H-Breath.wav",
+   "Organics/H-Breath.wav"
+  ],
+  "Organics/Paper_Bag.wav": [
+   "/Organics/Paper Bag.wav",
+   "Organics/Paper Bag.wav"
+  ],
+  "Organics/S-Sound.wav": "/Organics/S-Sound.wav",
+  "Organics/Shush_1.wav": [
+   "/Organics/Shush 1.wav",
+   "Organics/Shush 1.wav"
+  ],
+  "Organics/Shush_2.wav": "/Organics/Shush 2.wav",
+  "Organics/Squeeky.wav": "/Organics/Squeeky.wav",
+  "Organics/WindChimes.wav": [
+   "/Organics/WindChimes.wav",
+   "Organics/WindChimes.wav"
+  ],
+  "SOR/Analog_Flow.wav": "/SOR/Analog Flow.wav",
+  "SOR/Atmos_05.wav": [
+   "/SOR/Atmos 05.wav",
+   "SOR/Atmos 05.wav"
+  ],
+  "SOR/Atmos_07.wav": [
+   "/SOR/Atmos 07.wav",
+   "SOR/Atmos 07.wav"
+  ],
+  "SOR/Atmos_11.wav": [
+   "/SOR/Atmos 11.wav",
+   "SOR/Atmos 11.wav"
+  ],
+  "SOR/Atmos_14.wav": [
+   "/SOR/Atmos 14.wav",
+   "SOR/Atmos 14.wav"
+  ],
+  "SOR/Atmos_18.wav": "/SOR/Atmos 18.wav",
+  "SOR/Atmos_20.wav": [
+   "/SOR/Atmos 20.wav",
+   "SOR/Atmos 20.wav"
+  ],
+  "SOR/Atmos_44.wav": [
+   "/SOR/Atmos 44.wav",
+   "SOR/Atmos 44.wav"
+  ],
+  "SOR/Atmos_45.wav": [
+   "/SOR/Atmos 45.wav",
+   "SOR/Atmos 45.wav"
+  ],
+  "SOR/Atmos_47.wav": "/SOR/Atmos 47.wav",
+  "SOR/Atmos_52.wav": [
+   "SOR/Atmos 52.wav",
+   "/SOR/Atmos 52.wav"
+  ],
+  "SOR/Bonecrusher.wav": [
+   "/SOR/Bonecrusher.wav",
+   "SOR/Bonecrusher.wav"
+  ],
+  "SOR/Dark_Phuture.wav": [
+   "/SOR/Dark Phuture.wav",
+   "SOR/Dark Phuture.wav"
+  ],
+  "SOR/Electric_Bubbles.wav": [
+   "/SOR/Electric Bubbles.wav",
+   "SOR/Electric Bubbles.wav"
+  ],
+  "SOR/Electricity.wav": [
+   "/SOR/Electricity.wav",
+   "SOR/Electricity.wav"
+  ],
+  "SOR/Elysium.wav": [
+   "/SOR/Elysium.wav",
+   "SOR/Elysium.wav"
+  ],
+  "SOR/FX_5.wav": [
+   "/SOR/FX 5.wav",
+   "SOR/FX 5.wav"
+  ],
+  "SOR/Horns_Of_Fear.wav": [
+   "/SOR/Horns Of Fear.wav",
+   "SOR/Horns Of Fear.wav"
+  ],
+  "SOR/Horrorwind.wav": "/SOR/Horrorwind.wav",
+  "SOR/Metalmaster.wav": "/SOR/Metalmaster.wav",
+  "SOR/Place_Of_Fear.wav": "/SOR/Place Of Fear.wav",
+  "SOR/Polar_1.wav": "/SOR/Polar 1.wav",
+  "SOR/Polar_2.wav": [
+   "/SOR/Polar 2.wav",
+   "SOR/Polar 2.wav"
+  ],
+  "SOR/Prophecy.wav": [
+   "/SOR/Prophecy.wav",
+   "SOR/Prophecy.wav"
+  ],
+  "SOR/Rising.wav": [
+   "SOR/Rising.wav",
+   "/SOR/Rising.wav"
+  ],
+  "SOR/Strange_Flow.wav": "/SOR/Strange Flow.wav",
+  "SOR/Waterworld.wav": "/SOR/Waterworld.wav"
+ },
+ "irpath": {
+  "Factory/Short/L90_Hall_-_Small_Church.flac": "Factory/Short/L90 Hall - Small Church.flac"
+ }
+}

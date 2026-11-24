@@ -1,0 +1,9 @@
+These three files are MOSS-Music's model code, from https://github.com/OpenMOSS/MOSS-Music (src/ at
+commit ad107c7), licensed under the Apache License 2.0 (LICENSE in this folder).
+
+Changed here:
+- modeling_moss_music.py: imports its config relatively. For transformers 5.x, a Whisper encoder
+  layer returns a tensor, not a tuple, so the output is read as either; prepare_inputs_for_generation
+  reads the cache length from past_key_values (5.x does not pass cache_position there), so after the
+  first step only the new tokens go in and the audio is not merged again.
+- processing_moss_music.py: the unused torchaudio import removed.
